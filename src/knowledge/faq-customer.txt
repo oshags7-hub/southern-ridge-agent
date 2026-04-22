@@ -1,0 +1,82 @@
+SOUTHERN RIDGE FARM — CUSTOMER FAQ
+For use by the Storyteller agent when drafting customer-facing content.
+Owner: Please fill in answers based on your actual practices and preferences.
+
+================================================================================
+PRODUCT QUESTIONS
+================================================================================
+
+Q: Where can I buy your products?
+A: [FILL IN — farm stand location/hours, online ordering link if applicable]
+
+Q: Do you ship?
+A: [FILL IN — yes/no, which products, which states, shipping carrier]
+
+Q: How do I place an order?
+A: [FILL IN — website, email, text, etc.]
+
+Q: Do you take orders in advance or is it first-come first-served?
+A: [FILL IN — current system]
+
+Q: How should I store the meat when I get home?
+A: [FILL IN — refrigerate within X hours, freeze if not using within X days, etc.]
+
+================================================================================
+FARMING PRACTICE QUESTIONS
+================================================================================
+
+Q: Are your animals pastured?
+A: [FILL IN — describe actual pasture rotation, acreage, seasonal variations]
+
+Q: Are your animals given antibiotics or hormones?
+A: [FILL IN — current practice. Common answer: no routine antibiotics, no hormones,
+   but note if you treat sick animals — "we treat sick animals as needed but do not
+   administer routine preventative antibiotics"]
+
+Q: What do your pigs/cattle/sheep eat?
+A: [FILL IN — pasture + any supplemental feed, GMO status if relevant]
+
+Q: Are you certified organic?
+A: [FILL IN — if yes, which certifier. If no, explain why and what practices you do follow]
+
+Q: Can I visit the farm?
+A: [FILL IN — yes/no, farm tour schedule, how to sign up]
+
+================================================================================
+DAIRY QUESTIONS
+================================================================================
+
+Q: Do you sell raw milk?
+A: We offer raw milk through our herdshare program. Under Tennessee law, raw milk
+   cannot be sold retail — but you can own a share of our herd and receive your
+   portion of their milk production. Contact us to learn more about herdshare membership.
+
+Q: What is a herdshare?
+A: A herdshare means you own a percentage of our dairy animals. We board and care for
+   your animals on the farm. In return, you receive your share of their milk each week.
+   You're not buying milk — you're receiving the production of animals you own.
+   [FILL IN: current boarding fee and how to join]
+
+Q: Is raw milk safe?
+A: [FILL IN — owner's preferred answer. Suggested: "Raw milk is a personal choice.
+   We take sanitation seriously and test our milk regularly. We recommend you research
+   the topic and make the choice that's right for your family."]
+
+Q: What animals are in the dairy herd?
+A: [FILL IN — cow, goat, breed, number of animals]
+
+================================================================================
+COOKING QUESTIONS
+================================================================================
+
+Q: How do I cook your breakfast sausage?
+A: [FILL IN — preferred method, internal temp, any tips]
+
+Q: What's the best way to cook a pastured whole chicken?
+A: [FILL IN — pastured birds often cook faster, lower fat content, suggested method]
+
+Q: Do you have recipes?
+A: [FILL IN — link to recipe page, Instagram highlights, or note that none exist yet]
+
+Q: How long will the meat last in the freezer?
+A: [FILL IN — general guidance: vacuum-sealed cuts 6-12 months, ground 3-4 months]

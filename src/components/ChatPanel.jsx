@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { agentKeys, agentLabels, agentReplies, agentFallbackReplies, agentImageReplies, imageEnabledAgents } from '../data/agentConfig.js'
 // eslint-disable-next-line no-unused-vars
-import * as AnthropicService from '../services/anthropic.js'
+import { buildSystemPrompt } from '../services/anthropic.js'
 import './ChatPanel.css'
 
 function buildOpeningMessages(agentKey, overrideText) {
@@ -35,10 +35,22 @@ export default function ChatPanel({ activeAgent, onAgentChange, initialMessage }
     setMessages(prev => [...prev, { role: 'user', text }])
 
     // --- ANTHROPIC INTEGRATION POINT ---
-    // Replace this setTimeout block with a real API call via AnthropicService.
-    // Example shape:
-    //   const reply = await AnthropicService.chat({ agentKey: activeAgent, messages, userMessage: text })
+    // buildSystemPrompt(activeAgent) returns the full system prompt for this agent,
+    // combining its role, personality, and relevant knowledge files.
+    //
+    // To go live, replace this setTimeout with:
+    //
+    //   const systemPrompt = buildSystemPrompt(activeAgent)
+    //   const reply = await AnthropicService.chat({
+    //     agentKey: activeAgent,
+    //     systemPrompt,
+    //     messages,
+    //     userMessage: text,
+    //   })
     //   setMessages(prev => [...prev, { role: 'agent', text: reply }])
+    //
+    // Until VITE_ANTHROPIC_API_KEY is set, the mock reply below is used.
+    void buildSystemPrompt(activeAgent) // imported and ready
     setTimeout(() => {
       setMessages(prev => [...prev, { role: 'agent', text: agentFallbackReplies[activeAgent] }])
     }, 550)

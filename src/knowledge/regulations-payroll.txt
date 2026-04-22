@@ -1,0 +1,96 @@
+SOUTHERN RIDGE FARM — PAYROLL & TAX REGULATIONS
+Source: IRS Publication 51 (Circular A), TDOL — verify with CPA annually.
+Last verified: [DATE — fill in after CPA review]
+
+NOTE: Southern Ridge Farm operates as a hybrid farm/retail business. This creates
+a dual filing requirement — farm employees use Form 943, retail employees use
+Form 941. Misclassifying employees between these forms can trigger IRS issues.
+
+================================================================================
+FORM 943 — AGRICULTURAL EMPLOYEES
+================================================================================
+Who files: Employers who paid wages to farmworkers
+Form: IRS Form 943 (Employer's Annual Federal Tax Return for Agricultural Employees)
+Filing frequency: Annual (due January 31 for prior year)
+Deposit schedule: Depends on deposit liability — monthly or semiweekly
+
+Applies to:
+  - Workers paid to do farm work (planting, harvesting, animal care)
+  - Workers paid $150+ in cash wages during the year, OR
+  - Farm paid $2,500+ total to all farmworkers during the year
+
+Special rule: H-2A workers are exempt from FICA (Social Security/Medicare)
+Regular farm employees: Subject to FICA
+
+Current agricultural employees: [fill in names/roles]
+Seasonal workers: [fill in peak seasons and approximate count]
+
+================================================================================
+FORM 941 — RETAIL / NON-FARM EMPLOYEES
+================================================================================
+Who files: Employers with non-agricultural employees
+Form: IRS Form 941 (Employer's Quarterly Federal Tax Return)
+Filing frequency: Quarterly (due April 30, July 31, Oct 31, Jan 31)
+
+Applies to:
+  - Farm stand retail workers (cashier, customer service)
+  - Administrative / bookkeeping staff
+  - Any worker NOT doing primary agricultural work
+
+If an employee does both farm work AND retail work:
+  - Allocate wages between Form 943 and Form 941 based on actual duties
+  - Keep time records to support the split
+  - Consult CPA for proper allocation method
+
+================================================================================
+FUTA — FEDERAL UNEMPLOYMENT TAX
+================================================================================
+Agricultural FUTA exemption applies if:
+  - Paid less than $20,000 in cash wages to farm workers in any quarter, AND
+  - Employed fewer than 10 workers on any given day in 20 different weeks
+
+If either threshold is exceeded, FUTA applies to agricultural workers.
+Retail workers are always subject to standard FUTA rules.
+
+FUTA rate: 6% on first $7,000 of wages (reduced by state credit up to 5.4%)
+Form: IRS Form 940 (annual, due January 31)
+
+================================================================================
+TENNESSEE SUTA — STATE UNEMPLOYMENT TAX
+================================================================================
+Issuing authority: Tennessee Department of Labor and Workforce Development (TDOL)
+Rate: Varies by employer experience rating (new employers: assigned rate)
+Wage base: First $7,000 of each employee's wages
+Form: Quarterly report through Tennessee's Jobs4TN / TDOL portal
+Due dates: Same quarters as Form 941
+
+Agricultural exemption: Similar thresholds as FUTA — confirm with TDOL
+
+TDOL contact: 844-224-5818
+Portal: jobs4tn.gov
+
+================================================================================
+FILING DEADLINES CALENDAR
+================================================================================
+January 31:
+  - Form 943 due (prior year farm employees)
+  - Form 940 due (prior year FUTA)
+  - W-2s to employees
+  - W-3 + W-2 copies to SSA
+
+April 30:  Form 941 Q1 due
+July 31:   Form 941 Q2 due
+October 31: Form 941 Q3 due
+January 31: Form 941 Q4 due
+
+Quarterly SUTA: Same schedule as Form 941
+
+================================================================================
+1099 REQUIREMENTS
+================================================================================
+Form 1099-NEC required for:
+  - Any non-employee (contractor) paid $600+ during the year
+  - Due to contractor: January 31
+  - Due to IRS: January 31
+
+Do NOT issue 1099s to: corporations (generally), employees (use W-2 instead)

@@ -1,0 +1,130 @@
+SOUTHERN RIDGE FARM — BUSINESS PROFILE
+Last updated: 2025-04
+
+================================================================================
+BUSINESS OVERVIEW
+================================================================================
+Southern Ridge Farm is a family-owned diversified farm operation in Tennessee.
+The farm is operated by the Odom family and focuses on pasture-raised meats,
+raw dairy (via herdshare), eggs, honey, and seasonal vegetables. The business
+blends direct farm sales with a small retail operation and an active online
+presence. Faith is woven into the farm's identity and is reflected in how the
+family communicates with customers and runs the business.
+
+Business type: Sole proprietorship / family farm (confirm legal entity)
+State: Tennessee
+Founded: [YEAR — fill in]
+Owner(s): [Primary owner name(s) — fill in]
+
+================================================================================
+LOCATIONS
+================================================================================
+Farm / Primary Location:
+  Address: [Street address — fill in]
+  County: [County — fill in]
+  Highway frontage: Hwy 72 (referenced in marketing)
+
+Farm Stand:
+  Days/hours: Saturday mornings (primary sales day)
+  Notes: Sells out quickly — sausage reportedly gone by 9am some weeks
+
+Online / Delivery:
+  Website: [URL — fill in]
+  Ordering: [Online store / email / text — fill in]
+  Delivery area: [fill in if applicable]
+
+================================================================================
+PRODUCTS
+================================================================================
+Meats:
+  - Breakfast sausage (house-made, pasture-raised pork, sage/pepper/heat blend)
+  - Whole chicken (pasture-raised)
+  - Ground lamb
+  - Lamb chops
+  - Bone-in lamb leg
+  - Dry-aged ribeyes (newer offering, high demand)
+  - Smoked brisket flat
+  - [Other cuts — fill in]
+
+Dairy (Herdshare only — see regulations-dairy.txt):
+  - Raw milk (cow or goat — confirm species)
+  - [Other dairy — fill in]
+
+Poultry / Other:
+  - Eggs (dozen)
+  - Wildflower honey
+
+Seasonal / Crop:
+  - Winter wheat (east field, harvested seasonally)
+  - [Other crops — fill in]
+
+Pricing:
+  - Farm box (curated): ~$85 value
+  - [Individual item pricing — fill in]
+
+================================================================================
+CHANNELS
+================================================================================
+Sales channels:
+  1. Farm stand (Saturday — primary)
+  2. Online orders / email (confirm system)
+  3. CSA / subscription box (if applicable — confirm)
+  4. Herdshare contracts (dairy only)
+
+Marketing channels:
+  1. Instagram (@southernridgefarm — confirm handle)
+  2. Facebook (Southern Ridge Farm page)
+  3. Email newsletter (periodic, farm updates + product availability)
+  4. Word of mouth / local community
+
+================================================================================
+STAFF OVERVIEW
+================================================================================
+Family-run operation. Crew scheduling mentioned for harvest windows.
+Seasonal labor likely during harvest. [Fill in headcount / structure]
+
+Farm employees: likely filed under Form 943 (agricultural)
+Retail employees: filed under Form 941 (see regulations-payroll.txt)
+
+================================================================================
+BRAND VOICE
+================================================================================
+Tone: Warm, direct, unpretentious. Talks like a neighbor, not a brand.
+Language level: Plain. No jargon. Short sentences.
+We/I usage: "We" for the family/farm, "I" in personal email outreach.
+Humor: Dry, occasional. Never forced.
+Urgency: Real when needed (limited stock, harvest windows) — never manufactured.
+
+What to avoid:
+  - Corporate language ("leverage," "synergy," "ecosystem")
+  - Over-explaining farming practices — the audience already respects them
+  - Exclamation points in every sentence
+  - Hashtag overload (3–5 max per Instagram post)
+
+Content that performs well:
+  - Behind-the-scenes moments (lambing, early morning, kids on the farm)
+  - Honest product descriptions ("no fillers," "no shortcuts")
+  - Specific details (pen 7, gate 4, east field) — makes it feel real
+  - Scarcity when true (sold out by 9am)
+
+================================================================================
+FAITH INTEGRATION NOTES
+================================================================================
+Faith is a genuine part of the family's identity and is integrated naturally,
+not performatively. Scripture references are used occasionally and fit the
+content — never forced or preachy.
+
+Examples of appropriate integration:
+  - Closing a newsletter with a relevant verse
+  - Referencing gratitude and stewardship in harvest or lambing posts
+  - Using language like "blessed," "grateful," "good work"
+
+Examples of inappropriate use:
+  - Opening every post with a Bible verse
+  - Preaching to customers about faith
+  - Using faith language in invoices, receipts, or regulatory communications
+
+Common verses used (natural fit):
+  - Psalm 23:1 (shepherd content)
+  - 1 Thessalonians 5:18 (gratitude / harvest)
+  - Proverbs 12:11 (hard work / farm life)

@@ -1,0 +1,89 @@
+SOUTHERN RIDGE FARM — MEAT SALES REGULATIONS
+Source: TDA, USDA FSIS — verify current requirements with TDA directly before acting.
+Last verified: [DATE — fill in after review with TDA]
+
+================================================================================
+TDA RETAIL MEAT SALES PERMIT
+================================================================================
+Issuing authority: Tennessee Department of Agriculture (TDA)
+Required for: Any retail sale of meat products directly to consumers
+Applies to: Farm stand sales, online orders, CSA boxes
+
+Key requirements:
+  - Permit must be current and posted at point of sale
+  - Annual renewal required
+  - Fees: [verify current fee schedule with TDA]
+  - Application: TDA Division of Regulatory Services
+
+Contact:
+  TDA Regulatory Services: 615-837-5100
+  Website: tn.gov/agriculture
+
+Notes for agents:
+  - Do not quote specific permit numbers or fees without confirming current schedule
+  - Flag any compliance questions for owner review before advising action
+
+================================================================================
+TDA RETAIL FOOD STORE LICENSE
+================================================================================
+May be required in addition to meat permit depending on product mix.
+Applies if selling: eggs, honey, packaged goods alongside meat.
+Confirm current requirements with TDA for mixed-product farm stands.
+
+================================================================================
+USDA FSIS REQUIREMENTS
+================================================================================
+Federal Meat Inspection Act applies to interstate commerce.
+Intrastate (Tennessee-only) sales may qualify for exemption under:
+  - Retail exemption (selling directly to end consumer)
+  - Custom exempt (not for resale, uninspected)
+  - State-inspected facilities (TDA-inspected processing)
+
+Important: Animals must be slaughtered and processed at a USDA-inspected
+or TDA-inspected facility unless qualifying for a specific exemption.
+
+For custom-exempt processing (personal use, not resale):
+  - Animal must be owned by purchaser prior to slaughter
+  - Cannot be sold in commerce
+
+Current processor used: [fill in name and inspection status]
+
+================================================================================
+HACCP REQUIREMENTS
+================================================================================
+HACCP (Hazard Analysis Critical Control Points) plans required for:
+  - Any further processing beyond whole cuts (grinding, smoking, curing)
+  - Inspected facilities handling product for resale
+
+House-made sausage:
+  - Requires processing at inspected facility with HACCP plan, OR
+  - Falls under retail exemption if made and sold on-premises to end consumer
+  - Confirm current compliance status with processor and TDA
+
+Smoked/cured products (brisket, smoked items):
+  - Smoking for sale requires time/temp documentation
+  - Confirm with processor whether this is covered under their HACCP plan
+
+================================================================================
+LABELING REQUIREMENTS
+================================================================================
+Required on all retail meat packages:
+  - Product name (common or usual name)
+  - Net weight
+  - Ingredients (if not a single-ingredient product)
+  - Inspection legend or retail exemption statement
+  - Handler/packer name and address
+  - Safe handling instructions (for raw products)
+
+For house-made sausage specifically:
+  - Ingredient statement required (pork, spices — list all)
+  - Allergen statement if applicable
+  - "Keep refrigerated" or "Keep frozen" storage instruction
+
+================================================================================
+ANNUAL COMPLIANCE CALENDAR (PLACEHOLDER)
+================================================================================
+[Month]: TDA permit renewal due
+[Month]: TDA retail food license renewal due
+[Month]: Processor HACCP review
+Ongoing: Temperature logs, cleaning logs per facility requirements
