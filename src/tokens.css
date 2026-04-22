@@ -1,0 +1,22 @@
+:root {
+  --soil: #1C1A14;
+  --bark: #2E2A1E;
+  --moss: #3A4A2E;
+  --pasture: #5C7A3E;
+  --sage: #8FAF6A;
+  --hay: #C9A84C;
+  --amber: #D4874A;
+  --cream: #F5F0E8;
+  --parchment: #EDE5D4;
+  --smoke: #9E9688;
+  --ash: #6B6557;
+  --white: #FDFAF5;
+  --red-alert: #C0392B;
+  --gold-alert: #B8860B;
+  --green-ok: #3A6B35;
+
+  /* Derived / composite tokens */
+  --cream-dim: rgba(245, 240, 232, 0.55);    /* --cream at 55% — muted text on dark bg */
+  --cream-dimmer: rgba(245, 240, 232, 0.40); /* --cream at 40% — very muted on dark bg */
+  --selected-bg: #EEF2E8;                    /* list item selected state */
+}

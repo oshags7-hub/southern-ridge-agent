@@ -1,0 +1,88 @@
+export const drafts = [
+  {
+    id: 1,
+    platform: 'Instagram',
+    title: 'Fresh sausage drop',
+    meta: 'instagram · @southernridgefarm',
+    content: `New batch just hit the cooler. 🐖\n\nOur house-made breakfast sausage — pork raised right here on the ridge, seasoned simply with sage, black pepper, and a little heat. No fillers. No shortcuts.\n\nAvailable at the farm stand Saturday morning while it lasts. Come early — last week we were sold out by 9am.\n\n📍 Southern Ridge Farm, Hwy 72\n#farmfresh #pastureraised #knowyourfarmer #southernridgefarm`,
+  },
+  {
+    id: 2,
+    platform: 'Newsletter',
+    title: 'April farm newsletter',
+    meta: 'email · April 2025 send',
+    content: `Hey neighbor,\n\nApril's been a full one. The ewes finished lambing last week — 14 healthy lambs, two sets of twins, and one very proud mama who wouldn't let us near her for the first 48 hours. Can't blame her.\n\nWe've got fresh cuts available now including lamb chops, bone-in leg, and ground. Reply to this email or stop by the stand Saturday.\n\nAlso: we're hosting a farm tour on April 26th for families. Free, no signup needed. Just show up at 9am at the front gate.\n\nGrateful for y'all,\nThe Odom Family`,
+  },
+  {
+    id: 3,
+    platform: 'Facebook',
+    title: 'Spring giveaway',
+    meta: 'facebook · southern ridge farm page',
+    content: `🌿 SPRING GIVEAWAY 🌿\n\nWe're giving away a Southern Ridge Farm box — $85 value — to say thank you for another season of support.\n\nWhat's inside: 2 lbs breakfast sausage, 1 whole chicken, 1 lb ground lamb, a dozen eggs, and a jar of our wildflower honey.\n\nTo enter:\n✅ Like this post\n✅ Follow our page\n✅ Tag someone who deserves good food\n\nWinner announced Friday at noon. Good luck! 🙌`,
+  },
+  {
+    id: 4,
+    platform: 'Email',
+    title: 'Aaron re-engagement',
+    meta: 'email · lapsed customer · aaron',
+    content: `Hey Aaron,\n\nIt's been a while — hope things are good on your end.\n\nWe've got some new cuts this season we think you'd like, including dry-aged ribeyes and a smoked brisket flat that's been getting a lot of attention at the stand.\n\nWe're also doing a first-order-back discount of 15% for folks we haven't seen in a while. Just use WELCOME15 at checkout through the end of the month.\n\nNo pressure — just wanted to reach out.\n\nThanks,\nSouthern Ridge Farm`,
+  },
+  {
+    id: 5,
+    platform: 'Email',
+    title: 'Stephen review request',
+    meta: 'email · post-purchase · stephen',
+    content: `Hey Stephen,\n\nThanks for your order last week — hope everything arrived fresh and you're enjoying it.\n\nWe're a small operation and honest reviews mean a lot to us. If you've got two minutes, we'd really appreciate it if you left us a note on Google.\n\n👉 [Leave a Google Review]\n\nAnd if anything wasn't right with your order, just reply here and we'll make it good.\n\nThank you,\nThe Odom Family\nSouthern Ridge Farm`,
+  },
+]
+
+export const agentAlerts = [
+  {
+    id: 1,
+    agentKey: 'watchman',
+    agentName: 'Watchman',
+    urgency: 'high',
+    text: 'Fence line breach detected on north pasture — gate 4 left open overnight.',
+    action: 'Review incident',
+  },
+  {
+    id: 2,
+    agentKey: 'paymaster',
+    agentName: 'Paymaster',
+    urgency: 'medium',
+    text: 'Supplier invoice #4821 is 3 days past due. Pending approval before payment.',
+    action: 'Approve payment',
+  },
+  {
+    id: 3,
+    agentKey: 'bookkeeper',
+    agentName: 'Bookkeeper',
+    urgency: 'low',
+    text: 'Monthly reconciliation complete. 2 unmatched transactions require categorization.',
+    action: 'Categorize',
+  },
+  {
+    id: 4,
+    agentKey: 'shepherd',
+    agentName: 'Shepherd',
+    urgency: 'high',
+    text: 'Flock health check flagged 3 animals showing signs of respiratory illness.',
+    action: 'View animals',
+  },
+  {
+    id: 5,
+    agentKey: 'harvester',
+    agentName: 'Harvester',
+    urgency: 'medium',
+    text: 'Optimal harvest window for east field opens in 48 hours based on forecast.',
+    action: 'Schedule crew',
+  },
+  {
+    id: 6,
+    agentKey: 'storyteller',
+    agentName: 'Storyteller',
+    urgency: 'low',
+    text: 'Draft newsletter ready for review — 3 stories queued for this week\'s send.',
+    action: 'Review draft',
+  },
+]

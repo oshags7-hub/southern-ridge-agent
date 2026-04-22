@@ -1,0 +1,26 @@
+.content-studio {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 14px;
+  padding: 16px;
+  background: var(--cream);
+  min-height: 0;
+}
+
+@media (max-width: 680px) {
+  .content-studio {
+    grid-template-columns: 1fr;
+    padding: 12px;
+  }
+}
+
+.studio-left {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+
+.studio-right {
+  min-width: 0;
+}

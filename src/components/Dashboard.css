@@ -1,0 +1,27 @@
+.dashboard {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 24px;
+}
+
+.dashboard .agent-feed {
+  flex: 1;
+  min-width: 0;
+}
+
+.dashboard .chat-panel {
+  width: 380px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 680px) {
+  .dashboard {
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  .dashboard .chat-panel {
+    width: 100%;
+  }
+}
