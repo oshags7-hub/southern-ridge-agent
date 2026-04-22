@@ -103,6 +103,74 @@
   border-radius: 10px 2px 10px 10px;
 }
 
+/* Drop overlay */
+.chat-messages {
+  position: relative;
+}
+
+.chat-messages.drag-over {
+  background: #EAF0E0;
+}
+
+.drop-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(234, 240, 224, 0.92);
+  border: 2px dashed var(--pasture);
+  border-radius: 6px;
+  z-index: 10;
+  font-size: 13px;
+  color: var(--moss);
+  font-weight: 500;
+  pointer-events: none;
+}
+
+.drop-overlay-icon {
+  font-size: 28px;
+}
+
+/* Image message bubble */
+.image-bubble {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px !important;
+  max-width: 200px;
+}
+
+.chat-image {
+  width: 100%;
+  border-radius: 6px;
+  display: block;
+}
+
+.chat-image-name {
+  font-size: 11px;
+  color: var(--smoke);
+  word-break: break-all;
+}
+
+/* Attach button */
+.attach-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0 4px;
+  opacity: 0.6;
+  transition: opacity 0.12s ease;
+  flex-shrink: 0;
+}
+
+.attach-btn:hover {
+  opacity: 1;
+}
+
 /* Input row */
 .chat-input-row {
   display: flex;

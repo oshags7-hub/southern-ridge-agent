@@ -28,3 +28,20 @@ export const agentFallbackReplies = {
   shepherd:   "Thanks. I'll keep watch and alert you if their condition changes.",
   harvester:  "Copy that. I'll keep an eye on the forecast and update the schedule.",
 }
+
+// Replies when an image is dropped into the chat
+export const agentImageReplies = {
+  paymaster:
+    "I can see this document. It looks like a vendor invoice — I'm reading a charge that I can log against your open payables. Want me to match it to an existing PO, or create a new expense entry and flag it for approval?",
+  bookkeeper:
+    "Got the document. I'll pull the line items and propose categories for each one. Once you confirm, I'll post it to the ledger and include it in this period's close. Should I proceed?",
+  watchman:
+    "Image received. I'll log this as an attachment to the current incident report. Do you want me to add a note or timestamp it and file it automatically?",
+  shepherd:
+    "Thanks for sending this. I'll attach it to the animal's health record. Should I flag it for the vet or just file it in the treatment log?",
+  harvester:
+    "Got it. I'll attach this to the current field report. Want me to link it to a specific block or log it under general harvest records?",
+}
+
+// Agents that support image/document drop
+export const imageEnabledAgents = ['paymaster', 'bookkeeper']

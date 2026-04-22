@@ -2,14 +2,22 @@ import { useState } from 'react'
 import './App.css'
 import Dashboard from './components/Dashboard.jsx'
 import ContentStudio from './components/ContentStudio.jsx'
+import Onboarding, { ONBOARDING_KEY } from './components/Onboarding.jsx'
 
 const TABS = ['Dashboard', 'Content studio']
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('Dashboard')
+  const [showOnboarding, setShowOnboarding] = useState(
+    () => !localStorage.getItem(ONBOARDING_KEY)
+  )
 
   return (
     <>
+      {showOnboarding && (
+        <Onboarding onComplete={() => setShowOnboarding(false)} />
+      )}
+
       <div className="topbar">
         <span className="brand">
           Southern<span className="brand-ridge">Ridge</span>
@@ -25,7 +33,15 @@ export default function App() {
             </button>
           ))}
         </nav>
+        <button
+          className="help-btn"
+          title="Show intro"
+          onClick={() => setShowOnboarding(true)}
+        >
+          ?
+        </button>
       </div>
+
       <main className="main-content">
         {activeTab === 'Dashboard' && (
           <Dashboard onSwitchToStudio={() => setActiveTab('Content studio')} />
