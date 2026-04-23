@@ -1,28 +1,28 @@
 .dashboard {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: minmax(0, 2.2fr) minmax(0, 1fr);
   gap: 20px;
   padding: 24px;
+  align-items: start;
 }
 
-.dashboard-left {
-  flex: 1;
+.dashboard > * {
   min-width: 0;
+}
+
+.dash-left,
+.dash-right {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
+  min-width: 0;
 }
 
-.dashboard .chat-panel {
-  width: 380px;
-  flex-shrink: 0;
-}
-
-/* Re-engagement action bar */
+/* Re-engagement bar */
 .reengagement-bar {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
@@ -56,13 +56,9 @@
   font-style: italic;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 900px) {
   .dashboard {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     padding: 12px;
-  }
-
-  .dashboard .chat-panel {
-    width: 100%;
   }
 }

@@ -1,16 +1,20 @@
 import { useState } from 'react'
 import AgentFeed from './AgentFeed.jsx'
 import ChatPanel from './ChatPanel.jsx'
-import { agentReplies } from '../data/agentConfig.js'
-import { agentAlerts } from '../mockData.js'
+import MetricsRow from './MetricsRow.jsx'
+import SalesChart from './SalesChart.jsx'
+import ProfitAnalysis from './ProfitAnalysis.jsx'
+import UploadZone from './UploadZone.jsx'
 import { useDraftQueue } from '../services/draftQueue.js'
 import { getAtRiskCustomers } from '../services/shopify.js'
 import { generateShepherdDraft } from '../services/generators.js'
+import { agentAlerts } from '../mockData.js'
 import './Dashboard.css'
 
 export default function Dashboard({ onSwitchToStudio }) {
   const [activeAgent, setActiveAgent] = useState('watchman')
   const [initialMessage, setInitialMessage] = useState(null)
+  const [prefillInput, setPrefillInput] = useState(null)
   const [chatKey, setChatKey] = useState(0)
   const [generating, setGenerating] = useState(false)
   const [reengagementStatus, setReengagementStatus] = useState('')
@@ -19,25 +23,22 @@ export default function Dashboard({ onSwitchToStudio }) {
 
   function handleAlertClick(agentKey) {
     const alert = agentAlerts.find(a => a.agentKey === agentKey)
-    const text = alert
-      ? `${alert.text} — ${alert.action}`
-      : agentReplies[agentKey]
+    const text = alert ? `${alert.text} — ${alert.action}` : null
 
-    if (activeAgent === agentKey) {
-      setInitialMessage(text)
-      setChatKey(k => k + 1)
-    } else {
-      setActiveAgent(agentKey)
-      setInitialMessage(text)
-    }
+    setActiveAgent(agentKey)
+    setInitialMessage(text)
+    setPrefillInput(null)
+    setChatKey(k => k + 1)
+
+    document.getElementById('ask-panel')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
   }
 
-  function handleFeedClick(agentKey) {
-    if (agentKey === 'storyteller') {
-      onSwitchToStudio?.()
-      return
-    }
-    handleAlertClick(agentKey)
+  function handleBookkeeperAsk(question) {
+    setActiveAgent('bookkeeper')
+    setInitialMessage(null)
+    setPrefillInput(question)
+    setChatKey(k => k + 1)
+    document.getElementById('ask-panel')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
   }
 
   async function handleGenerateReengagement() {
@@ -45,39 +46,23 @@ export default function Dashboard({ onSwitchToStudio }) {
       setReengagementStatus('Shopify not connected — add VITE_WORKER_URL to .env.local')
       return
     }
-
     setGenerating(true)
     setReengagementStatus('')
-
     try {
       const customers = await getAtRiskCustomers()
       const batch = customers.slice(0, 5)
-
       if (!batch.length) {
         setReengagementStatus('No at-risk customers found')
         setGenerating(false)
         return
       }
-
-      const results = await Promise.allSettled(
-        batch.map(c => generateShepherdDraft(c))
-      )
-
+      const results = await Promise.allSettled(batch.map(c => generateShepherdDraft(c)))
       let count = 0
       for (const r of results) {
-        if (r.status === 'fulfilled') {
-          addDraft(r.value)
-          count++
-        }
+        if (r.status === 'fulfilled') { addDraft(r.value); count++ }
       }
-
       setReengagementStatus(`${count} draft${count !== 1 ? 's' : ''} added to Content Studio`)
-      if (count > 0) {
-        setTimeout(() => {
-          onSwitchToStudio?.()
-          setReengagementStatus('')
-        }, 1200)
-      }
+      if (count > 0) setTimeout(() => { onSwitchToStudio?.(); setReengagementStatus('') }, 1200)
     } catch (err) {
       setReengagementStatus(`Error: ${err.message}`)
     } finally {
@@ -87,8 +72,24 @@ export default function Dashboard({ onSwitchToStudio }) {
 
   return (
     <div className="dashboard">
-      <div className="dashboard-left">
-        <AgentFeed onAlertClick={handleFeedClick} />
+      <div className="dash-left">
+        <MetricsRow />
+        <div id="ask-panel">
+          <ChatPanel
+            key={chatKey}
+            activeAgent={activeAgent}
+            onAgentChange={key => { setActiveAgent(key); setInitialMessage(null); setPrefillInput(null) }}
+            initialMessage={initialMessage}
+            prefillInput={prefillInput}
+          />
+        </div>
+        <SalesChart />
+        <ProfitAnalysis onBookkeeperAsk={handleBookkeeperAsk} />
+      </div>
+
+      <div className="dash-right">
+        <AgentFeed onAlertClick={handleAlertClick} />
+        <UploadZone />
         <div className="reengagement-bar">
           <button
             className="reengagement-btn"
@@ -102,15 +103,6 @@ export default function Dashboard({ onSwitchToStudio }) {
           )}
         </div>
       </div>
-      <ChatPanel
-        key={chatKey}
-        activeAgent={activeAgent}
-        onAgentChange={key => {
-          setActiveAgent(key)
-          setInitialMessage(null)
-        }}
-        initialMessage={initialMessage}
-      />
     </div>
   )
 }

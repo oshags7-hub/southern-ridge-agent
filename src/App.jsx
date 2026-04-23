@@ -1,18 +1,29 @@
 import { useState } from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Dashboard from './components/Dashboard.jsx'
 import ContentStudio from './components/ContentStudio.jsx'
 import Onboarding, { ONBOARDING_KEY } from './components/Onboarding.jsx'
 import AdminSettings from './components/admin/AdminSettings.jsx'
+import { agentAlerts } from './mockData.js'
 
 const TABS = ['Dashboard', 'Content studio']
+
+const TODAY = new Date().toLocaleDateString('en-US', {
+  weekday: 'short', month: 'short', day: 'numeric',
+})
+
+const URGENT_COUNT = agentAlerts.filter(a => a.urgency === 'high').length
 
 function MainApp() {
   const [activeTab, setActiveTab] = useState('Dashboard')
   const [showOnboarding, setShowOnboarding] = useState(
     () => !localStorage.getItem(ONBOARDING_KEY)
   )
+
+  function scrollToAlerts() {
+    document.getElementById('agent-feed')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
 
   return (
     <>
@@ -35,13 +46,21 @@ function MainApp() {
             </button>
           ))}
         </nav>
-        <button
-          className="help-btn"
-          title="Show intro"
-          onClick={() => setShowOnboarding(true)}
-        >
-          ?
-        </button>
+        <div className="topbar-right">
+          <span className="topbar-date">{TODAY}</span>
+          {URGENT_COUNT > 0 && (
+            <button className="urgent-chip" onClick={scrollToAlerts}>
+              {URGENT_COUNT} urgent
+            </button>
+          )}
+          <button
+            className="help-btn"
+            title="Show intro"
+            onClick={() => setShowOnboarding(true)}
+          >
+            ?
+          </button>
+        </div>
       </div>
 
       <main className="main-content">

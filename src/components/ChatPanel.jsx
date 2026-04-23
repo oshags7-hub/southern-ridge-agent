@@ -1,77 +1,61 @@
 import { useState, useEffect, useRef } from 'react'
-import { agentKeys, agentLabels, agentReplies, agentImageReplies, imageEnabledAgents } from '../data/agentConfig.js'
+import { AGENTS, CHAT_AGENT_KEYS } from '../config/agents.js'
 import { sendMessage, agentNeedsShopifyData } from '../services/anthropic.js'
 import './ChatPanel.css'
 
-// Display message: { role: 'user'|'agent', text?, type?: 'image', src?, name? }
-// API history:     { role: 'user'|'assistant', content: string }
-
-function buildOpening(agentKey, overrideText) {
-  return {
-    display: [{ role: 'agent', text: overrideText ?? agentReplies[agentKey] }],
-    // Opening message is UI-only — not sent to API as history
-    history: [],
-  }
+// Per-agent selected-pill background colors
+const PILL_COLORS = {
+  watchman:   'var(--moss)',
+  paymaster:  '#8B6914',
+  bookkeeper: '#2E5A8A',
+  shepherd:   'var(--amber)',
+  harvester:  'var(--ash)',
+  storyteller:'#6B4A9E',
+  educator:   'var(--pasture)',
 }
 
-export default function ChatPanel({ activeAgent, onAgentChange, initialMessage }) {
-  const opening = buildOpening(activeAgent, initialMessage)
-  const [messages, setMessages] = useState(opening.display)
-  const [apiHistory, setApiHistory] = useState(opening.history)
-  const [input, setInput] = useState('')
+export default function ChatPanel({ activeAgent, onAgentChange, initialMessage, prefillInput }) {
+  const [response, setResponse] = useState(initialMessage ? { text: initialMessage } : null)
+  const [input, setInput] = useState(prefillInput ?? '')
   const [typing, setTyping] = useState(false)
   const [loadingData, setLoadingData] = useState(false)
-  const [dragOver, setDragOver] = useState(false)
-  const listRef = useRef(null)
-  const fileInputRef = useRef(null)
+  const [apiHistory, setApiHistory] = useState([])
+  const inputRef = useRef(null)
 
-  const supportsImageDrop = imageEnabledAgents.includes(activeAgent)
   const hasApiKey = !!import.meta.env.VITE_ANTHROPIC_API_KEY
+  const isBusy = typing || loadingData
 
+  // Focus input on mount
   useEffect(() => {
-    const o = buildOpening(activeAgent, initialMessage)
-    setMessages(o.display)
-    setApiHistory(o.history)
+    inputRef.current?.focus()
+  }, [])
+
+  async function handleAsk() {
+    const question = input.trim()
+    if (!question || isBusy) return
     setInput('')
-    setTyping(false)
-    setLoadingData(false)
-  }, [activeAgent, initialMessage])
-
-  useEffect(() => {
-    if (listRef.current) {
-      listRef.current.scrollTop = listRef.current.scrollHeight
-    }
-  }, [messages, typing])
-
-  async function handleSend() {
-    const text = input.trim()
-    if (!text || typing) return
-    setInput('')
-
-    const userDisplay = { role: 'user', text }
-    setMessages(prev => [...prev, userDisplay])
 
     const needsData = agentNeedsShopifyData(activeAgent) && !!import.meta.env.VITE_WORKER_URL
     if (needsData) setLoadingData(true)
     else setTyping(true)
 
-    const nextHistory = [...apiHistory, { role: 'user', content: text }]
+    const nextHistory = [...apiHistory, { role: 'user', content: question }]
 
     try {
       const reply = await sendMessage({
         agentKey: activeAgent,
         history: apiHistory,
-        userMessage: text,
+        userMessage: question,
       })
       setLoadingData(false)
       setTyping(true)
       setApiHistory([...nextHistory, { role: 'assistant', content: reply }])
-      setMessages(prev => [...prev, { role: 'agent', text: reply }])
+      setResponse({ text: reply })
     } catch (err) {
-      const fallback = hasApiKey
-        ? `Something went wrong reaching the server. (${err.message})`
-        : 'API key not configured. Add VITE_ANTHROPIC_API_KEY to .env.local to enable live responses.'
-      setMessages(prev => [...prev, { role: 'agent', text: fallback }])
+      const msg = hasApiKey
+        ? `Something went wrong. (${err.message})`
+        : 'Add VITE_ANTHROPIC_API_KEY to .env.local to enable live responses.'
+      setResponse({ text: msg })
     } finally {
       setLoadingData(false)
       setTyping(false)
@@ -81,151 +65,77 @@ export default function ChatPanel({ activeAgent, onAgentChange, initialMessage }
   function handleKeyDown(e) {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault()
-      handleSend()
+      handleAsk()
     }
   }
 
-  function processImageFile(file) {
-    if (!file || !file.type.startsWith('image/')) return
-    const reader = new FileReader()
-    reader.onload = async (e) => {
-      const imgDisplay = { role: 'user', type: 'image', src: e.target.result, name: file.name }
-      setMessages(prev => [...prev, imgDisplay])
-      setTyping(true)
-
-      // Image messages use a descriptive text in API history
-      const imageMsg = `[User attached an image: ${file.name}]`
-      const nextHistory = [...apiHistory, { role: 'user', content: imageMsg }]
-
-      try {
-        const reply = hasApiKey
-          ? await sendMessage({ agentKey: activeAgent, history: apiHistory, userMessage: imageMsg })
-          : (agentImageReplies[activeAgent] ?? 'Image received.')
-
-        // Short delay for mock path so it feels natural
-        if (!hasApiKey) await new Promise(r => setTimeout(r, 700))
-
-        setApiHistory([...nextHistory, { role: 'assistant', content: reply }])
-        setMessages(prev => [...prev, { role: 'agent', text: reply }])
-      } catch {
-        setMessages(prev => [...prev, { role: 'agent', text: agentImageReplies[activeAgent] ?? 'Image received.' }])
-      } finally {
-        setTyping(false)
-      }
-    }
-    reader.readAsDataURL(file)
-  }
-
-  function handleDrop(e) {
-    e.preventDefault()
-    setDragOver(false)
-    if (!supportsImageDrop) return
-    processImageFile(e.dataTransfer.files[0])
-  }
-
-  function handleFileSelect(e) {
-    processImageFile(e.target.files[0])
-    e.target.value = ''
-  }
+  const agentLabel = AGENTS[activeAgent]?.label ?? activeAgent
 
   return (
-    <div className="chat-panel">
-      <div className="chat-agent-bar">
-        {agentKeys.map(key => (
-          <button
-            key={key}
-            className={`agent-pill${activeAgent === key ? ' active' : ''}`}
-            onClick={() => onAgentChange(key)}
-          >
-            {agentLabels[key]}
-          </button>
-        ))}
+    <div className="ask-panel">
+      <span className="ask-section-label">Ask an agent</span>
+
+      <div className="ask-who-row">
+        <span className="ask-who-label">Who are you asking?</span>
+        <div className="ask-pills">
+          {CHAT_AGENT_KEYS.map(key => {
+            const isActive = key === activeAgent
+            const color = PILL_COLORS[key] ?? 'var(--ash)'
+            return (
+              <button
+                key={key}
+                className={`ask-pill${isActive ? ' active' : ''}`}
+                style={isActive
+                  ? { background: color, borderColor: 'transparent', color: 'var(--cream)' }
+                  : {}}
+                onClick={() => onAgentChange(key)}
+              >
+                {AGENTS[key]?.label ?? key}
+              </button>
+            )
+          })}
+        </div>
       </div>
 
-      <div
-        className={`chat-messages${dragOver ? ' drag-over' : ''}`}
-        ref={listRef}
-        onDrop={handleDrop}
-        onDragOver={e => { e.preventDefault(); if (supportsImageDrop) setDragOver(true) }}
-        onDragLeave={() => setDragOver(false)}
-      >
-        {dragOver && (
-          <div className="drop-overlay">
-            <span className="drop-overlay-icon">📄</span>
-            <span>Drop invoice or bill image here</span>
-          </div>
-        )}
-
-        {messages.map((msg, i) => (
-          <div key={i} className={`chat-message ${msg.role}`}>
-            {msg.role === 'agent' && (
-              <span className="chat-msg-label">{agentLabels[activeAgent]}</span>
-            )}
-            {msg.type === 'image' ? (
-              <div className="chat-bubble image-bubble">
-                <img src={msg.src} alt={msg.name} className="chat-image" />
-                <span className="chat-image-name">{msg.name}</span>
-              </div>
-            ) : (
-              <div className="chat-bubble">{msg.text}</div>
-            )}
-          </div>
-        ))}
-
-        {loadingData && (
-          <div className="chat-message agent">
-            <span className="chat-msg-label">{agentLabels[activeAgent]}</span>
-            <div className="chat-bubble loading-data-bubble">Loading your data…</div>
-          </div>
-        )}
-
-        {typing && (
-          <div className="chat-message agent">
-            <span className="chat-msg-label">{agentLabels[activeAgent]}</span>
-            <div className="chat-bubble typing-bubble">
-              <span className="typing-dot" />
-              <span className="typing-dot" />
-              <span className="typing-dot" />
-            </div>
-          </div>
-        )}
-      </div>
-
-      <div className="chat-input-row">
-        {supportsImageDrop && (
-          <>
-            <button
-              className="attach-btn"
-              title="Attach invoice or bill"
-              onClick={() => fileInputRef.current?.click()}
-            >
-              📎
-            </button>
-            <input
-              ref={fileInputRef}
-              type="file"
-              accept="image/*"
-              style={{ display: 'none' }}
-              onChange={handleFileSelect}
-            />
-          </>
-        )}
+      <div className="ask-input-row">
         <input
-          className="chat-input"
-          placeholder={supportsImageDrop ? `Message ${agentLabels[activeAgent]} or drop an image…` : `Message ${agentLabels[activeAgent]}…`}
+          ref={inputRef}
+          className="ask-input"
+          placeholder={`Ask ${agentLabel} a question…`}
           value={input}
           onChange={e => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
-          disabled={typing || loadingData}
+          disabled={isBusy}
         />
         <button
-          className="chat-send"
-          onClick={handleSend}
-          disabled={!input.trim() || typing || loadingData}
+          className="ask-btn"
+          onClick={handleAsk}
+          disabled={!input.trim() || isBusy}
         >
-          {loadingData ? '…' : typing ? '…' : 'Send'}
+          {isBusy ? '…' : 'Ask'}
         </button>
       </div>
+
+      {(response || isBusy) && (
+        <div className="ask-response-area">
+          <span className="ask-response-label">{agentLabel}</span>
+          <div className="ask-response-bubble">
+            {isBusy ? (
+              loadingData ? (
+                <span className="ask-loading-text">Loading your data…</span>
+              ) : (
+                <div className="ask-typing">
+                  <span className="typing-dot" />
+                  <span className="typing-dot" />
+                  <span className="typing-dot" />
+                </div>
+              )
+            ) : (
+              response?.text
+            )}
+          </div>
+        </div>
+      )}
     </div>
   )
 }

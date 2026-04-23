@@ -76,9 +76,41 @@ body {
   font-weight: 500;
 }
 
+/* Topbar right section */
+.topbar-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.topbar-date {
+  font-size: 11px;
+  color: var(--cream-dim);
+  white-space: nowrap;
+}
+
+.urgent-chip {
+  background: rgba(192, 57, 43, 0.18);
+  border: 1px solid rgba(192, 57, 43, 0.35);
+  border-radius: 20px;
+  color: #f4a49a;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.12s ease;
+}
+
+.urgent-chip:hover {
+  background: rgba(192, 57, 43, 0.28);
+}
+
 /* Help / re-trigger onboarding */
 .help-btn {
-  margin-left: auto;
   background: none;
   border: 1px solid rgba(253, 250, 245, 0.25);
   border-radius: 50%;
@@ -110,4 +142,19 @@ body {
     font-size: 12px;
     padding: 0 10px;
   }
+}
+
+/* Global overflow prevention */
+.dashboard > *,
+.dash-left > *,
+.dash-right > * {
+  min-width: 0;
+}
+
+/* Badge / tag text must never break layout */
+[class*="-badge"],
+[class*="-tag"],
+[class*="-chip"] {
+  white-space: nowrap;
+  flex-shrink: 0;
 }

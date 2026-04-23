@@ -10,7 +10,7 @@ const URGENCY_COLORS = {
 
 export default function AgentFeed({ onAlertClick }) {
   return (
-    <div className="agent-feed">
+    <div className="agent-feed" id="agent-feed">
       {agentAlerts.map((alert, i) => {
         const agent = AGENTS[alert.agentKey] ?? { abbr: '??', icon: { bg: 'var(--parchment)', color: 'var(--ash)' } }
         return (
