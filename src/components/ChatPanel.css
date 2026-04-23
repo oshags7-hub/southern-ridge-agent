@@ -155,6 +155,13 @@
   word-break: break-all;
 }
 
+/* Loading data bubble */
+.loading-data-bubble {
+  color: var(--smoke) !important;
+  font-style: italic;
+  font-size: 12px !important;
+}
+
 /* Typing indicator */
 .typing-bubble {
   display: flex;

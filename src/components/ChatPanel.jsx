@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { agentKeys, agentLabels, agentReplies, agentImageReplies, imageEnabledAgents } from '../data/agentConfig.js'
-import { sendMessage } from '../services/anthropic.js'
+import { sendMessage, agentNeedsShopifyData } from '../services/anthropic.js'
 import './ChatPanel.css'
 
 // Display message: { role: 'user'|'agent', text?, type?: 'image', src?, name? }
@@ -20,6 +20,7 @@ export default function ChatPanel({ activeAgent, onAgentChange, initialMessage }
   const [apiHistory, setApiHistory] = useState(opening.history)
   const [input, setInput] = useState('')
   const [typing, setTyping] = useState(false)
+  const [loadingData, setLoadingData] = useState(false)
   const [dragOver, setDragOver] = useState(false)
   const listRef = useRef(null)
   const fileInputRef = useRef(null)
@@ -33,6 +34,7 @@ export default function ChatPanel({ activeAgent, onAgentChange, initialMessage }
     setApiHistory(o.history)
     setInput('')
     setTyping(false)
+    setLoadingData(false)
   }, [activeAgent, initialMessage])
 
   useEffect(() => {
@@ -48,7 +50,10 @@ export default function ChatPanel({ activeAgent, onAgentChange, initialMessage }
 
     const userDisplay = { role: 'user', text }
     setMessages(prev => [...prev, userDisplay])
-    setTyping(true)
+
+    const needsData = agentNeedsShopifyData(activeAgent) && !!import.meta.env.VITE_WORKER_URL
+    if (needsData) setLoadingData(true)
+    else setTyping(true)
 
     const nextHistory = [...apiHistory, { role: 'user', content: text }]
 
@@ -58,6 +63,8 @@ export default function ChatPanel({ activeAgent, onAgentChange, initialMessage }
         history: apiHistory,
         userMessage: text,
       })
+      setLoadingData(false)
+      setTyping(true)
       setApiHistory([...nextHistory, { role: 'assistant', content: reply }])
       setMessages(prev => [...prev, { role: 'agent', text: reply }])
     } catch (err) {
@@ -66,6 +73,7 @@ export default function ChatPanel({ activeAgent, onAgentChange, initialMessage }
         : 'API key not configured. Add VITE_ANTHROPIC_API_KEY to .env.local to enable live responses.'
       setMessages(prev => [...prev, { role: 'agent', text: fallback }])
     } finally {
+      setLoadingData(false)
       setTyping(false)
     }
   }
@@ -164,6 +172,13 @@ export default function ChatPanel({ activeAgent, onAgentChange, initialMessage }
           </div>
         ))}
 
+        {loadingData && (
+          <div className="chat-message agent">
+            <span className="chat-msg-label">{agentLabels[activeAgent]}</span>
+            <div className="chat-bubble loading-data-bubble">Loading your data…</div>
+          </div>
+        )}
+
         {typing && (
           <div className="chat-message agent">
             <span className="chat-msg-label">{agentLabels[activeAgent]}</span>
@@ -201,14 +216,14 @@ export default function ChatPanel({ activeAgent, onAgentChange, initialMessage }
           value={input}
           onChange={e => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
-          disabled={typing}
+          disabled={typing || loadingData}
         />
         <button
           className="chat-send"
           onClick={handleSend}
-          disabled={!input.trim() || typing}
+          disabled={!input.trim() || typing || loadingData}
         >
-          {typing ? '…' : 'Send'}
+          {loadingData ? '…' : typing ? '…' : 'Send'}
         </button>
       </div>
     </div>

@@ -5,6 +5,7 @@
 
 import { AGENTS } from '../config/agents.js'
 import { knowledgeBase } from '../knowledge/index.js'
+import { getRecentOrders, getProducts, getAtRiskCustomers } from './shopify.js'
 
 const STORAGE_KEY = 'srm_business_data_v1'
 
@@ -67,7 +68,47 @@ function formatBusinessData(data) {
   return lines.join('\n')
 }
 
-export function buildSystemPrompt(agentKey) {
+function formatOrders(orders) {
+  if (!orders?.length) return 'No orders found for this period.'
+  const total = orders.reduce((sum, o) => sum + parseFloat(o.total_price || 0), 0)
+  const lines = [
+    `${orders.length} orders | Total revenue: $${total.toFixed(2)}`,
+    '',
+    ...orders.slice(0, 20).map(o => {
+      const items = o.line_items.map(li => `${li.quantity}x ${li.title}`).join(', ')
+      return `  ${o.created_at.slice(0, 10)} | ${o.customer_name} | $${o.total_price} | ${items}`
+    }),
+  ]
+  if (orders.length > 20) lines.push(`  ... and ${orders.length - 20} more orders`)
+  return lines.join('\n')
+}
+
+function formatProducts(products) {
+  if (!products?.length) return 'No active products found.'
+  return products
+    .map(p => {
+      const prices = p.variants.map(v => `$${v.price}`).join(' / ')
+      const inv = p.inventory_quantity
+      const invLabel = inv === 0 ? 'OUT OF STOCK' : inv < 5 ? `LOW (${inv})` : `${inv} in stock`
+      return `  ${p.title} [${p.product_type || 'uncategorized'}] — ${prices} — ${invLabel}`
+    })
+    .join('\n')
+}
+
+function formatAtRiskCustomers(customers) {
+  if (!customers?.length) return 'No at-risk customers found.'
+  return customers
+    .slice(0, 20)
+    .map(c => {
+      const name = `${c.first_name} ${c.last_name}`.trim()
+      const days = c.days_since_order != null ? `${c.days_since_order} days ago` : 'unknown'
+      const products = c.last_order_products.slice(0, 3).join(', ')
+      return `  ${name} | Last order: ${days} | ${c.total_orders} total orders | Last bought: ${products || 'unknown'}`
+    })
+    .join('\n')
+}
+
+export function buildSystemPrompt(agentKey, shopifyContext = null) {
   const agent = AGENTS[agentKey]
   if (!agent) return ''
 
@@ -82,14 +123,52 @@ export function buildSystemPrompt(agentKey) {
   const businessData = readBusinessData()
   const businessDataSection = formatBusinessData(businessData)
 
+  const shopifySection = shopifyContext
+    ? Object.entries(shopifyContext)
+        .map(([k, v]) => v)
+        .join('\n\n')
+    : null
+
   return [
     `AGENT ROLE AND PERSONALITY:\n${agent.role}`,
     knowledgeSections ? `RELEVANT KNOWLEDGE:\n${knowledgeSections}` : null,
     businessDataSection ? businessDataSection : null,
+    shopifySection ? shopifySection : null,
     SHARED_CONSTRAINTS,
   ]
     .filter(Boolean)
     .join('\n\n')
+}
+
+// Returns true if this agent fetches Shopify data before sending
+export function agentNeedsShopifyData(agentKey) {
+  return ['bookkeeper', 'shepherd', 'storyteller'].includes(agentKey)
+}
+
+// Fetches the Shopify data sections relevant to the given agent.
+// Returns an object of labeled sections, or null if Shopify is not configured.
+export async function fetchShopifyContext(agentKey) {
+  if (!import.meta.env.VITE_WORKER_URL) return null
+
+  const context = {}
+  try {
+    if (agentKey === 'bookkeeper') {
+      const orders = await getRecentOrders(30)
+      context.orders = `RECENT SALES DATA (last 30 days):\n${formatOrders(orders)}`
+    }
+    if (agentKey === 'shepherd') {
+      const customers = await getAtRiskCustomers()
+      context.atRisk = `CUSTOMERS NEEDING ATTENTION (no order in 90+ days):\n${formatAtRiskCustomers(customers)}`
+    }
+    if (agentKey === 'storyteller') {
+      const products = await getProducts()
+      context.products = `CURRENT PRODUCT CATALOG:\n${formatProducts(products)}`
+    }
+  } catch {
+    // Shopify data is best-effort — don't block the agent if it fails
+  }
+
+  return Object.keys(context).length ? context : null
 }
 
 export async function sendMessage({ agentKey, history, userMessage }) {
@@ -98,7 +177,11 @@ export async function sendMessage({ agentKey, history, userMessage }) {
     throw new Error('VITE_ANTHROPIC_API_KEY is not set')
   }
 
-  const systemPrompt = buildSystemPrompt(agentKey)
+  const shopifyContext = agentNeedsShopifyData(agentKey)
+    ? await fetchShopifyContext(agentKey)
+    : null
+
+  const systemPrompt = buildSystemPrompt(agentKey, shopifyContext)
 
   const response = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
@@ -106,6 +189,7 @@ export async function sendMessage({ agentKey, history, userMessage }) {
       'Content-Type': 'application/json',
       'x-api-key': apiKey,
       'anthropic-version': '2023-06-01',
+      'anthropic-dangerous-direct-browser-access': 'true',
     },
     body: JSON.stringify({
       model: 'claude-sonnet-4-20250514',
