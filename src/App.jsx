@@ -1,12 +1,14 @@
 import { useState } from 'react'
+import { Routes, Route, Link } from 'react-router-dom'
 import './App.css'
 import Dashboard from './components/Dashboard.jsx'
 import ContentStudio from './components/ContentStudio.jsx'
 import Onboarding, { ONBOARDING_KEY } from './components/Onboarding.jsx'
+import AdminSettings from './components/admin/AdminSettings.jsx'
 
 const TABS = ['Dashboard', 'Content studio']
 
-export default function App() {
+function MainApp() {
   const [activeTab, setActiveTab] = useState('Dashboard')
   const [showOnboarding, setShowOnboarding] = useState(
     () => !localStorage.getItem(ONBOARDING_KEY)
@@ -49,5 +51,14 @@ export default function App() {
         {activeTab === 'Content studio' && <ContentStudio />}
       </main>
     </>
+  )
+}
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<MainApp />} />
+      <Route path="/admin" element={<AdminSettings />} />
+    </Routes>
   )
 }

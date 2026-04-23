@@ -1,0 +1,260 @@
+/* ─── Shared section chrome ─────────────────────────────────────── */
+.admin-section {
+  background: var(--white);
+  border: 1px solid var(--parchment);
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.admin-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+
+.admin-section-title {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--soil);
+  margin: 0;
+}
+
+.admin-add-btn {
+  background: none;
+  border: 1px solid var(--parchment);
+  border-radius: 6px;
+  color: var(--pasture);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: border-color 0.12s, color 0.12s;
+}
+
+.admin-add-btn:hover {
+  border-color: var(--pasture);
+  color: var(--moss);
+}
+
+.admin-empty {
+  font-size: 13px;
+  color: var(--smoke);
+  margin: 0;
+}
+
+/* ─── Generic field primitives ───────────────────────────────────── */
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.field-group.grow {
+  flex: 1;
+}
+
+.field-label {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--smoke);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.field-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.field-row .field-group {
+  flex: 1;
+  min-width: 140px;
+}
+
+.admin-input {
+  background: var(--cream);
+  border: 1px solid var(--parchment);
+  border-radius: 6px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  color: var(--soil);
+  padding: 7px 10px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.12s;
+}
+
+.admin-input:focus {
+  border-color: var(--sage);
+}
+
+.admin-input::placeholder {
+  color: var(--smoke);
+}
+
+select.admin-input {
+  cursor: pointer;
+}
+
+.admin-delete-btn {
+  background: none;
+  border: none;
+  color: var(--smoke);
+  font-size: 13px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: color 0.12s, background 0.12s;
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-top: 22px; /* align with inputs */
+}
+
+.admin-delete-btn:hover {
+  color: var(--red-alert);
+  background: #fdf0ef;
+}
+
+/* ─── Permits ─────────────────────────────────────────────────────── */
+.permit-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.permit-card {
+  border: 1px solid var(--parchment);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--cream);
+}
+
+.permit-card-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.permit-card-row .field-group {
+  min-width: 160px;
+}
+
+/* ─── Employees ───────────────────────────────────────────────────── */
+.employees-hint {
+  font-size: 12px;
+  color: var(--smoke);
+  background: var(--cream);
+  border-left: 3px solid var(--sage);
+  padding: 7px 12px;
+  border-radius: 0 6px 6px 0;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.employees-table-wrap {
+  overflow-x: auto;
+}
+
+.employees-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.employees-table th {
+  text-align: left;
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--smoke);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0 10px 10px 0;
+  white-space: nowrap;
+}
+
+.employees-table td {
+  padding: 5px 10px 5px 0;
+  vertical-align: middle;
+}
+
+.employees-table td.td-center {
+  text-align: center;
+  padding-right: 0;
+}
+
+.employees-table tbody tr + tr td {
+  border-top: 1px solid var(--parchment);
+  padding-top: 10px;
+}
+
+.row-inactive td {
+  opacity: 0.45;
+}
+
+.admin-toggle {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: var(--moss);
+}
+
+.employees-totals {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--parchment);
+  font-size: 13px;
+  color: var(--ash);
+}
+
+.employees-totals strong {
+  color: var(--soil);
+}
+
+/* ─── Compliance ──────────────────────────────────────────────────── */
+.compliance-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.compliance-card {
+  border: 1px solid var(--parchment);
+  border-radius: 8px;
+  padding: 16px;
+  background: var(--cream);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.compliance-card-label {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--ash);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+@media (max-width: 600px) {
+  .compliance-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .permit-card-row {
+    flex-direction: column;
+  }
+}
