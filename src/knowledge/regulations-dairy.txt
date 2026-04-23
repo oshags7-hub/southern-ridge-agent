@@ -1,78 +1,179 @@
-SOUTHERN RIDGE FARM — DAIRY REGULATIONS (TENNESSEE)
-Source: TN Code Annotated § 53-3-119 — verify current law with a TN agricultural attorney.
-Last verified: [DATE — fill in after legal review]
+SOUTHERN RIDGE FARM — DAIRY REGULATORY GUIDE
+Operational reference for compliance agents. Last updated: April 2025.
 
-IMPORTANT: Raw milk retail sales are prohibited in Tennessee. Herdshare is the
-ONLY legal pathway for consumers to obtain raw milk from this farm. Any agent
-advising on dairy must understand and respect this constraint.
-
-================================================================================
-TENNESSEE RAW MILK LAW
-================================================================================
-Statute: TN Code § 53-3-119
-Summary: Sale of raw (unpasteurized) milk for human consumption is prohibited
-in Tennessee. The herdshare model is the recognized legal workaround.
-
-Under herdshare, the consumer is not "buying" milk — they own a share of the
-animal and are receiving their portion of the animal's production.
-
-Penalty for violation: Civil penalty of $500 per violation per day.
-Do NOT advise anyone to sell raw milk outside of a properly structured herdshare.
+IMPORTANT: Raw milk retail sales are PROHIBITED in Tennessee. The herdshare
+program is the ONLY legal pathway for customers to obtain raw milk from SRF.
+Never advise anyone to "buy" raw milk outside of a properly structured herdshare.
 
 ================================================================================
-HERDSHARE REQUIREMENTS
+1. TENNESSEE RAW MILK LAW
 ================================================================================
-A herdshare agreement must:
-  1. Be a written contract between the farm and the shareholder
-  2. Clearly state that the shareholder owns a specified percentage of the herd
-  3. Specify the boarding/care fee paid to the farm (separate from milk "purchase")
-  4. Acknowledge that the consumer assumes risk of consuming raw milk
+WHAT IT IS:
+TN Code Annotated § 53-3-119 prohibits the sale of raw (unpasteurized) milk for
+human consumption in Tennessee. This is a hard stop — there is no retail raw milk
+license available in Tennessee as of April 2025.
 
-The farm receives:
-  - A boarding/care fee (this is what the farm is paid — NOT for the milk)
-  - The boarding fee is what can be structured for regular payment
+WHAT IT MEANS IN PRACTICE:
+  - SRF cannot sell raw milk as a product, period.
+  - The herdshare model is the recognized legal structure: the customer owns
+    a share of the animal and receives their portion of the animal's production.
+    They are not "buying milk" — they are receiving production from their own
+    animal that the farm boards and cares for on their behalf.
+  - Boarding fees (what the farm charges) are legally distinct from milk sales.
+  - If a customer at The Ridge or the farm stand asks to "just buy some raw milk,"
+    the answer is: not possible. Direct them to the herdshare program.
 
-The consumer receives:
-  - Their proportional share of milk production based on ownership percentage
+PENALTY FOR VIOLATION:
+  - Civil penalty of $500 per violation per day
+  - Potential criminal charges and TDA enforcement action
+  - Reputational and legal exposure for the entire operation
 
-Key distinction: the farm never "sells" milk. It boards animals on behalf of owners.
-
-================================================================================
-CONTRACT REQUIREMENTS
-================================================================================
-Every herdshare agreement should include:
-  - Consumer's name and contact information
-  - Percentage of herd owned by consumer
-  - Species and approximate number of animals in share
-  - Boarding fee amount and payment schedule
-  - Acknowledgment of raw milk risks (signed)
-  - Farm's name, address, and owner signature
-  - Date of agreement
-
-Recommended: Have a TN agricultural attorney review the template annually.
-Current contract template location: [fill in — file storage location]
-Attorney contact: [fill in]
+DOCUMENTATION NEEDED:
+  - Written herdshare contracts on file for every active member (never verbal)
+  - Contracts must be fully executed (signed by both parties) before any milk
+    is transferred to the member
+  - Keep signed contracts indefinitely
 
 ================================================================================
-LABELING REQUIREMENTS
+2. HERDSHARE PROGRAM STRUCTURE
 ================================================================================
-Containers of raw milk distributed to herdshare members should be labeled:
-  - Farm name and address
-  - "RAW MILK — NOT PASTEURIZED"
+HOW IT WORKS:
+  - Customer enters a written herdshare agreement with SRF
+  - Customer owns a specified percentage of the herd
+  - SRF boards and cares for the animals on the customer's behalf
+  - SRF charges a boarding/care fee (this is the farm's revenue — not milk sales)
+  - Customer receives their proportional share of production
+
+WHAT THE CONTRACT MUST INCLUDE:
+  1. Customer's full name and contact information
+  2. Percentage of herd owned by the customer (or number of shares)
+  3. Species and approximate number of animals included
+  4. Boarding/care fee amount and payment schedule
+  5. Explicit acknowledgment that the customer owns a share of the animal,
+     not that they are purchasing milk
+  6. Signed raw milk risk acknowledgment (see section 3)
+  7. Farm name, address, and owner's signature
+  8. Date of agreement
+
+WHAT TO AVOID IN CONTRACT LANGUAGE:
+  - Never reference "selling milk," "purchase price of milk," or "milk price"
+  - Never reference "per gallon" pricing in the contract itself
+  - Boarding fee is per-animal share, not per unit of milk
+
+CURRENT SHAREHOLDER COUNT: Track in Admin Settings (compliance section)
+  Active herdshare customers as of latest count: see admin dashboard
+
+================================================================================
+3. RAW MILK RISK ACKNOWLEDGMENT
+================================================================================
+WHAT IT MUST COVER:
+Every herdshare contract must include a signed acknowledgment that:
+  - Raw milk is not pasteurized
+  - Raw milk may contain harmful bacteria including E. coli O157:H7,
+    Salmonella, Listeria, and Campylobacter
+  - Consuming raw milk carries health risks, especially for pregnant women,
+    infants, the elderly, and immunocompromised individuals
+  - The customer assumes all risk associated with consuming raw milk
+  - The farm has not represented the milk as safe for all consumers
+
+BEST PRACTICE:
+  Have a TN agricultural attorney review the risk acknowledgment language
+  annually. The legal standard for adequate disclosure may evolve.
+
+================================================================================
+4. RAW MILK LABELING AND HANDLING
+================================================================================
+LABELING REQUIREMENTS FOR HERDSHARE DISTRIBUTION:
+  - Farm name and address (Southern Ridge Farm, 2402 Gene Fitzgerald Rd,
+    Columbia TN 38401)
+  - "RAW MILK — NOT PASTEURIZED" — must be prominent
   - "For herdshare members only — not for resale"
-  - Date of collection
-  - Species (cow, goat)
-  - [Confirm additional TDA requirements for herdshare labeling]
+  - Date of collection (fill date)
+  - Species (Cow)
+  - A2A2 designation may be noted (this is a breed characteristic, not a
+    regulatory label — but is accurate and valuable for members)
 
-Do NOT label raw milk with a retail price or "for sale" language.
+DO NOT USE:
+  - Retail price labeling on raw milk containers
+  - "For sale" language of any kind
+  - A UPC barcode or retail-formatted label (implies retail sale)
+
+HANDLING:
+  - Raw milk should be refrigerated immediately after milking
+  - Distribute to members in sealed, clean containers
+  - Do not store raw milk in the same retail display case as products for sale
+  - Do not accept raw milk returns from members
 
 ================================================================================
-ADDITIONAL NOTES
+5. PASTEURIZED DAIRY — LOW-TEMP VAT PASTEURIZED
 ================================================================================
-- Herdshare members should not be listed as "customers" in retail records
-- Boarding fees should be clearly separated from product sales in accounting
-- Keep signed herdshare contracts on file indefinitely
-- If a shareholder asks to "buy a share" on the spot at the farm stand, direct
-  them to complete a formal written contract first — do not exchange milk informally
+WHAT IT IS:
+SRF also offers low-temperature vat pasteurized dairy products, which can be
+sold directly to consumers without the herdshare structure.
 
-TDA contact for dairy questions: 615-837-5100
+LEGAL STATUS:
+  - Pasteurized dairy products may be sold as retail items — no herdshare required
+  - Must comply with TDA Grade A dairy standards if sold as fluid milk
+  - Low-temp vat pasteurization (145°F for 30 minutes) is a recognized method
+    under both TDA and federal PMO (Pasteurized Milk Ordinance) standards
+
+TDA DAIRY PLANT LICENSE:
+  - Any facility producing pasteurized dairy for sale must hold a TDA Dairy
+    Plant License or operate under a licensed dairy's oversight
+  - Confirm current license status with TDA: (615) 837-5100
+  - Annual renewal required
+
+LABELING FOR PASTEURIZED PRODUCTS:
+  - Product name (e.g., "Whole Milk," "Heavy Cream")
+  - "PASTEURIZED" statement
+  - Grade designation if applicable ("Grade A")
+  - Net volume
+  - Farm name and address
+  - Sell-by or use-by date
+  - Keep refrigerated statement
+  - Nutritional panel if packaged for retail sale (FDA labeling rules)
+  - A2A2 claim is permissible as factual breed-characteristic information
+
+================================================================================
+6. A2A2 DAIRY CLAIM
+================================================================================
+WHAT IT IS:
+A2A2 refers to the beta-casein protein variant present in the milk. Cows with
+two copies of the A2 gene produce milk containing only the A2 beta-casein
+protein, rather than the A1 protein found in most commercial dairy.
+
+WHY SRF USES THIS CLAIM:
+  - Many people who experience digestive discomfort with conventional dairy
+    report tolerating A2A2 milk better
+  - It's an accurate, verifiable genetic characteristic of the herd
+  - It's a legitimate differentiator — not a marketing gimmick
+
+REGULATORY STATUS:
+  - "A2A2" is not a regulated claim under FDA or USDA rules as of April 2025
+  - It is permissible as factual product information
+  - Do not claim it "cures" lactose intolerance — it does not; lactose content
+    is unaffected. The difference is in the protein structure, not the sugar.
+  - SRF's accurate language: "A2A2 beta-casein protein — easier to digest
+    for many people who have trouble with conventional dairy"
+
+================================================================================
+7. COMPLIANCE CALENDAR — DAIRY
+================================================================================
+Annually:
+  - TDA Dairy Plant License renewal (confirm timing with TDA)
+  - HACCP/food safety plan review for pasteurized processing if applicable
+  - Herdshare contract template review with attorney
+  - Herdshare member list audit (confirm all active members have signed contracts)
+
+Ongoing:
+  - Track active herdshare member count (enter in Admin Settings)
+  - Maintain temp logs for milk storage and pasteurization batches
+  - Keep all herdshare contracts on file — do not discard after membership ends
+
+================================================================================
+QUICK REFERENCE — KEY CONTACTS
+================================================================================
+TDA Dairy Division: (615) 837-5100
+TN Code § 53-3-119: raw milk prohibition statute
+Recommended: TN agricultural attorney for contract review (confirm contact
+  in Admin Settings or via TDA referral)

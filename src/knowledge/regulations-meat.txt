@@ -1,89 +1,253 @@
-SOUTHERN RIDGE FARM — MEAT SALES REGULATIONS
-Source: TDA, USDA FSIS — verify current requirements with TDA directly before acting.
-Last verified: [DATE — fill in after review with TDA]
+SOUTHERN RIDGE FARM — MEAT REGULATORY GUIDE
+Operational reference for compliance agents. Last updated: April 2025.
 
 ================================================================================
-TDA RETAIL MEAT SALES PERMIT
+1. TDA RETAIL MEAT SALES PERMIT
 ================================================================================
-Issuing authority: Tennessee Department of Agriculture (TDA)
-Required for: Any retail sale of meat products directly to consumers
-Applies to: Farm stand sales, online orders, CSA boxes
+WHAT IT IS:
+Issued by the Tennessee Department of Agriculture (TDA). Required for any
+establishment that sells meat directly to consumers at retail.
 
-Key requirements:
-  - Permit must be current and posted at point of sale
-  - Annual renewal required
-  - Fees: [verify current fee schedule with TDA]
-  - Application: TDA Division of Regulatory Services
+WHAT IT REQUIRES IN PRACTICE:
+  - Annual permit renewal (permit year runs January–December)
+  - Physical permit must be posted visibly at each retail location
+  - Applies to both The Ridge Butcher Shop and the farm store
+  - Facility must pass TDA inspection to obtain and retain permit
+  - Meat sold must come from USDA-inspected or TDA-inspected sources
+  - Staff handling meat must follow food safety practices (see cold chain below)
 
-Contact:
-  TDA Regulatory Services: 615-837-5100
+PENALTY FOR NON-COMPLIANCE:
+  - Operating without a permit: civil penalty up to $1,000/day
+  - Permit suspension or revocation for repeated violations
+  - Potential criminal referral for willful violations
+
+DOCUMENTATION NEEDED:
+  - Current permit certificate (posted at facility)
+  - Renewal application submitted before December 31 each year
+  - Inspection records from TDA site visits
+  - Proof of USDA inspection of processed product (see USDA section)
+
+CONTACT: Tennessee Department of Agriculture
+  Consumer and Industry Services: (615) 837-5100
   Website: tn.gov/agriculture
 
-Notes for agents:
-  - Do not quote specific permit numbers or fees without confirming current schedule
-  - Flag any compliance questions for owner review before advising action
+================================================================================
+2. TDA RETAIL FOOD STORE LICENSE
+================================================================================
+WHAT IT IS:
+Separate from the meat permit — covers The Ridge as a retail food store selling
+a broader range of food products (baked goods, dairy, eggs, ferments, etc.).
+
+WHAT IT REQUIRES IN PRACTICE:
+  - Annual license renewal
+  - Covers sale of any food item, not just meat
+  - Facility must meet TDA food establishment requirements:
+    — Adequate refrigeration for perishables
+    — Proper hand-washing stations
+    — Food contact surfaces that are cleanable and sanitizable
+    — Pest control measures in place
+    — Adequate lighting and ventilation
+  - Applies to The Ridge location; farm store may fall under separate
+    agricultural exemptions for on-farm sales — confirm annually with TDA
+
+PENALTY FOR NON-COMPLIANCE:
+  - Fines, license suspension, or closure order
+  - Public posting of violations (reputational risk)
+
+DOCUMENTATION NEEDED:
+  - Current license certificate posted at The Ridge
+  - Renewal submitted annually
+  - Facility inspection reports on file
 
 ================================================================================
-TDA RETAIL FOOD STORE LICENSE
+3. USDA FSIS FEDERAL INSPECTION
 ================================================================================
-May be required in addition to meat permit depending on product mix.
-Applies if selling: eggs, honey, packaged goods alongside meat.
-Confirm current requirements with TDA for mixed-product farm stands.
+WHAT IT IS:
+Southern Ridge Farm operates an on-farm USDA FSIS (Food Safety and Inspection
+Service) inspected processing facility. This is the federal requirement for any
+meat that crosses state lines or is sold commercially under the USDA mark.
+
+WHAT IT REQUIRES IN PRACTICE:
+  - A USDA inspector must be present during all slaughter and processing
+    operations — inspection is continuous for slaughter, periodic for processing
+  - All meat must pass ante-mortem (live animal) and post-mortem (carcass)
+    inspection before it can be passed for human consumption
+  - Only USDA-passed product may bear the USDA inspection mark
+  - Facility must meet FSIS construction and sanitation standards:
+    — Separate clean and dirty areas
+    — Temperature-controlled processing rooms
+    — Documented sanitation procedures (SSOPs — Sanitation Standard Operating
+      Procedures) written and on file
+  - Daily sanitation records must be maintained
+  - Rejected product ("condemned") must be disposed of per FSIS protocol —
+    never re-enter the food supply
+
+PENALTY FOR NON-COMPLIANCE:
+  - FSIS can suspend inspection (effectively shutting down the facility)
+  - Criminal prosecution under the Federal Meat Inspection Act for willful
+    adulteration or misbranding
+  - Civil penalties and facility delisting
+
+DOCUMENTATION NEEDED:
+  - USDA Grant of Inspection (establishment number assigned by FSIS)
+  - Written SSOPs — must be reviewed and updated annually or when process changes
+  - Daily pre-operational and operational sanitation records
+  - Ante-mortem and post-mortem inspection logs (maintained by inspector, copies
+    kept on file)
+  - Condemned product disposition records
+
+CONTACT: USDA FSIS District Office (Nashville area)
+  FSIS Meat and Poultry Hotline: 1-888-MPHotline (1-888-674-6854)
+  FSIS website: fsis.usda.gov
 
 ================================================================================
-USDA FSIS REQUIREMENTS
+4. HACCP (HAZARD ANALYSIS AND CRITICAL CONTROL POINTS)
 ================================================================================
-Federal Meat Inspection Act applies to interstate commerce.
-Intrastate (Tennessee-only) sales may qualify for exemption under:
-  - Retail exemption (selling directly to end consumer)
-  - Custom exempt (not for resale, uninspected)
-  - State-inspected facilities (TDA-inspected processing)
+WHAT IT IS:
+Federal mandate under 9 CFR Part 417 for all USDA-inspected establishments.
+A systematic approach to identifying and controlling food safety hazards
+(biological, chemical, physical) in the processing flow.
 
-Important: Animals must be slaughtered and processed at a USDA-inspected
-or TDA-inspected facility unless qualifying for a specific exemption.
+WHAT IT REQUIRES IN PRACTICE:
+  - Written HACCP plan covering every product category processed at the facility
+  - Seven HACCP principles must be documented:
+    1. Conduct hazard analysis (identify what could go wrong at each step)
+    2. Identify Critical Control Points (CCPs) — steps where control is essential
+    3. Establish critical limits at each CCP (e.g., internal temp for cooking)
+    4. Establish monitoring procedures (who checks, how often, what equipment)
+    5. Establish corrective actions when a CCP is out of control
+    6. Verification procedures (validating the system works)
+    7. Recordkeeping and documentation
+  - HACCP plan must be reviewed at least annually, or whenever:
+    — A new product is added
+    — A new process step is introduced
+    — A food safety problem is identified
+    — New hazard information emerges
+  - At minimum one person trained in HACCP principles (by HACCP training course)
+    must be employed at the facility
 
-For custom-exempt processing (personal use, not resale):
-  - Animal must be owned by purchaser prior to slaughter
-  - Cannot be sold in commerce
+COMMON CCPs FOR SRF OPERATIONS:
+  - Chilling: carcass must reach 40°F within specified time after slaughter
+  - Cold storage: product must be maintained at 40°F or below (refrigerated)
+    or 0°F or below (frozen)
+  - Cooking/smoking: internal temperature requirements for cooked products
+    (pork sausage: 160°F internal; poultry products: 165°F internal)
+  - Antimicrobial interventions (e.g., organic acid rinse on carcasses)
 
-Current processor used: [fill in name and inspection status]
+PENALTY FOR NON-COMPLIANCE:
+  - FSIS can issue a Noncompliance Record (NR) for each deviation
+  - Pattern of NRs can trigger Notice of Intended Enforcement (NOIE)
+  - Continued non-compliance leads to suspension of inspection
+
+DOCUMENTATION NEEDED:
+  - Written HACCP plan (signed and dated by responsible establishment official)
+  - CCP monitoring records (daily or per-lot, depending on the CCP)
+  - Corrective action records for any deviations
+  - Verification records (calibration logs, periodic product testing)
+  - Annual HACCP reassessment signature page
 
 ================================================================================
-HACCP REQUIREMENTS
+5. LABELING REQUIREMENTS
 ================================================================================
-HACCP (Hazard Analysis Critical Control Points) plans required for:
-  - Any further processing beyond whole cuts (grinding, smoking, curing)
-  - Inspected facilities handling product for resale
+WHAT IT IS:
+All meat products bearing the USDA mark must be labeled per FSIS labeling
+regulations (9 CFR Parts 316-317 for meat; 381 for poultry).
 
-House-made sausage:
-  - Requires processing at inspected facility with HACCP plan, OR
-  - Falls under retail exemption if made and sold on-premises to end consumer
-  - Confirm current compliance status with processor and TDA
-
-Smoked/cured products (brisket, smoked items):
-  - Smoking for sale requires time/temp documentation
-  - Confirm with processor whether this is covered under their HACCP plan
-
-================================================================================
-LABELING REQUIREMENTS
-================================================================================
-Required on all retail meat packages:
+WHAT IT REQUIRES IN PRACTICE:
   - Product name (common or usual name)
-  - Net weight
-  - Ingredients (if not a single-ingredient product)
-  - Inspection legend or retail exemption statement
-  - Handler/packer name and address
-  - Safe handling instructions (for raw products)
+  - Inspection legend and establishment number
+  - Net weight (on consumer packages)
+  - Ingredients statement (for processed/multi-ingredient products like sausage)
+  - Allergen declarations where required
+  - Handling instructions: "KEEP REFRIGERATED" or "KEEP FROZEN" as applicable
+  - Safe handling instructions panel (required on most raw meat packages)
+  - For "grass-fed" claim: must comply with USDA AMS standard (100% grass/forage,
+    no grain supplementation) — SRF meets this; documentation of grazing
+    practices should be maintained in case of challenge
+  - For "no hormones" claim on beef: must be accompanied by statement that
+    federal regulations prohibit hormone use in poultry and pork on those labels
+  - For "no antibiotics" or "raised without antibiotics": requires affidavit
+    on file with FSIS; label claim must be approved before use
 
-For house-made sausage specifically:
-  - Ingredient statement required (pork, spices — list all)
-  - Allergen statement if applicable
-  - "Keep refrigerated" or "Keep frozen" storage instruction
+PENALTY FOR NON-COMPLIANCE:
+  - Misbranded product is adulterated under the FMIA — can be seized
+  - Unapproved label claims: FSIS can require label recall and correction
+
+DOCUMENTATION NEEDED:
+  - Approved label sketches (or generic approval documentation) on file
+  - Affidavits supporting "no antibiotics," "no hormones" claims
+  - If using third-party claim (e.g., "Animal Welfare Approved"): current
+    certification documentation on file
 
 ================================================================================
-ANNUAL COMPLIANCE CALENDAR (PLACEHOLDER)
+6. COLD CHAIN REQUIREMENTS
 ================================================================================
-[Month]: TDA permit renewal due
-[Month]: TDA retail food license renewal due
-[Month]: Processor HACCP review
-Ongoing: Temperature logs, cleaning logs per facility requirements
+WHAT IT IS:
+Temperature control from processing through sale. Both FSIS regulations and
+TDA retail requirements specify temperature limits.
+
+WHAT IT REQUIRES IN PRACTICE:
+  - Refrigerated raw meat: 40°F or below at all times after processing
+  - Frozen meat: 0°F or below; once frozen, do not re-freeze after thawing
+    unless re-processed under inspection
+  - Display cases at The Ridge: must maintain 40°F or below
+  - Cooler/freezer logs: record temps at least once per day; twice recommended
+  - If a cooler fails: document the event, assess product safety, take corrective
+    action (transfer product, discard if temperature abuse is confirmed)
+  - Customer advisory for bulk cow shares: product is frozen for pickup;
+    advise customers to bring a cooler for trips longer than 30 minutes
+
+TEMPERATURE QUICK REFERENCE:
+  - Refrigerated raw product: 28-40°F (target range)
+  - Frozen: 0°F or below
+  - Cooked/ready-to-eat hot-hold: 140°F or above
+  - Cooling cooked product: to 70°F within 2 hours, then 40°F within 4 hours total
+  - Ground beef: cook to 160°F internal
+
+PENALTY FOR NON-COMPLIANCE:
+  - Temperature abuse is a food safety adulteration issue
+  - FSIS or TDA can condemn product and require disposal
+  - Repeated violations trigger facility-level enforcement action
+
+DOCUMENTATION NEEDED:
+  - Daily cooler and freezer temperature logs at The Ridge and farm store
+  - Calibration records for thermometers used in monitoring
+  - Corrective action records for any temperature deviations
+
+================================================================================
+7. TRANSPORT RULES
+================================================================================
+WHAT IT IS:
+Rules governing how meat is transported between the farm processing facility,
+The Ridge, and customers.
+
+WHAT IT REQUIRES IN PRACTICE:
+  - Transport vehicles carrying raw meat must maintain 40°F or below
+    (refrigerated) or 0°F or below (frozen) during transit
+  - Vehicles used for meat transport must be clean and free of contamination
+    sources (chemicals, non-food items)
+  - Market Wagon and Nashville farmers market deliveries: product must be
+    maintained at proper temperature during transport and at the pickup location
+  - Bulk cow share pickup: farm ensures product is frozen and packaged;
+    customer assumes responsibility after pickup
+
+INTRASTATE VS. INTERSTATE:
+  - SRF primarily sells within Tennessee (intrastate) — USDA inspection still
+    applies because SRF chose federal inspection (also required for any
+    interstate commerce and for the USDA mark)
+  - Any out-of-state shipment: USDA inspection mark is required; product may not
+    leave Tennessee without it (SRF's facility meets this requirement)
+
+DOCUMENTATION NEEDED:
+  - Temperature logs for delivery vehicles if delivering regularly to markets
+  - Delivery records for Market Wagon (platform maintains these)
+  - For direct customer delivery: maintain records of delivery date, product,
+    and customer
+
+================================================================================
+QUICK REFERENCE — KEY CONTACTS
+================================================================================
+TDA Consumer and Industry Services: (615) 837-5100
+USDA FSIS Meat and Poultry Hotline: 1-888-674-6854
+FSIS website: fsis.usda.gov
+Tennessee Meat and Poultry Inspection: part of TDA, same main number

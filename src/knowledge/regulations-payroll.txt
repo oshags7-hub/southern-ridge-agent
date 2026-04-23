@@ -1,96 +1,249 @@
-SOUTHERN RIDGE FARM — PAYROLL & TAX REGULATIONS
-Source: IRS Publication 51 (Circular A), TDOL — verify with CPA annually.
-Last verified: [DATE — fill in after CPA review]
+SOUTHERN RIDGE FARM — PAYROLL & TAX REGULATORY GUIDE
+Operational reference for compliance agents. Last updated: April 2025.
+Source: IRS Publication 51 (Circular A), TDOL. Verify with CPA annually.
 
-NOTE: Southern Ridge Farm operates as a hybrid farm/retail business. This creates
-a dual filing requirement — farm employees use Form 943, retail employees use
-Form 941. Misclassifying employees between these forms can trigger IRS issues.
-
-================================================================================
-FORM 943 — AGRICULTURAL EMPLOYEES
-================================================================================
-Who files: Employers who paid wages to farmworkers
-Form: IRS Form 943 (Employer's Annual Federal Tax Return for Agricultural Employees)
-Filing frequency: Annual (due January 31 for prior year)
-Deposit schedule: Depends on deposit liability — monthly or semiweekly
-
-Applies to:
-  - Workers paid to do farm work (planting, harvesting, animal care)
-  - Workers paid $150+ in cash wages during the year, OR
-  - Farm paid $2,500+ total to all farmworkers during the year
-
-Special rule: H-2A workers are exempt from FICA (Social Security/Medicare)
-Regular farm employees: Subject to FICA
-
-Current agricultural employees: [fill in names/roles]
-Seasonal workers: [fill in peak seasons and approximate count]
+CRITICAL NOTE: Southern Ridge Farm is a hybrid farm/retail operation. This
+creates a DUAL FILING REQUIREMENT — farm employees file under Form 943 (annual),
+retail employees file under Form 941 (quarterly). Misclassifying employees
+between these forms is a common audit trigger. Always confirm classification
+with a CPA.
 
 ================================================================================
-FORM 941 — RETAIL / NON-FARM EMPLOYEES
+1. FORM 943 — AGRICULTURAL EMPLOYEES
 ================================================================================
-Who files: Employers with non-agricultural employees
-Form: IRS Form 941 (Employer's Quarterly Federal Tax Return)
-Filing frequency: Quarterly (due April 30, July 31, Oct 31, Jan 31)
+WHAT IT IS:
+IRS Form 943 (Employer's Annual Federal Tax Return for Agricultural Employees).
+Used for workers who do farm labor — animal care, pasture work, processing
+support, farm maintenance, field work.
 
-Applies to:
-  - Farm stand retail workers (cashier, customer service)
-  - Administrative / bookkeeping staff
-  - Any worker NOT doing primary agricultural work
+WHAT IT REQUIRES IN PRACTICE:
+  - Files ANNUALLY — due January 31 for the prior calendar year
+  - Covers Social Security (6.2%), Medicare (1.45%) employer and employee shares
+  - Federal income tax withholding on farm wages
+  - Deposit schedule: monthly or semiweekly depending on prior-year tax liability
+    — SRF's CPA should confirm the current deposit schedule
 
-If an employee does both farm work AND retail work:
-  - Allocate wages between Form 943 and Form 941 based on actual duties
-  - Keep time records to support the split
-  - Consult CPA for proper allocation method
+THRESHOLD: Form 943 applies if the farm paid:
+  - $150 or more in cash wages to any one farmworker during the year, OR
+  - $2,500 or more total to all farmworkers during the year
+
+EMPLOYEE CLASSIFICATION FOR FORM 943:
+  Covered: livestock care, pasture management, fencing, farm equipment operation,
+  feeding, breeding, processing facility workers (when working as part of farm
+  production), any on-farm labor that is directly agricultural in nature
+
+  NOT covered: retail store employees at The Ridge, administrative staff,
+  bookkeepers — these go on Form 941
+
+DUAL-ROLE EMPLOYEES:
+  If an employee does both farm work AND retail work (common at SRF), their
+  wages must be allocated between Form 943 and Form 941 based on actual duties
+  performed. Keep time records. Consult CPA on allocation method.
+
+H-2A WORKERS (if applicable):
+  H-2A agricultural visa workers are exempt from FICA (Social Security and
+  Medicare). If SRF ever hires H-2A workers, those wages are reported on Form
+  943 but FICA taxes are not withheld or matched.
+
+PENALTY FOR NON-COMPLIANCE:
+  - Failure to file: 5% of unpaid tax per month, up to 25%
+  - Failure to deposit on time: graduated penalty 2%–15% based on how late
+  - Trust fund recovery penalty: IRS can hold responsible persons personally
+    liable for unpaid withholding taxes
+
+DOCUMENTATION NEEDED:
+  - Form 943 filed by January 31 each year
+  - W-2s issued to all farm employees by January 31
+  - W-3 transmittal + W-2 copies to SSA by January 31 (or February 28 if paper)
+  - Deposit confirmation records (EFTPS confirmations)
+  - Time records supporting agricultural classification for each employee
 
 ================================================================================
-FUTA — FEDERAL UNEMPLOYMENT TAX
+2. FORM 941 — RETAIL / NON-FARM EMPLOYEES
 ================================================================================
-Agricultural FUTA exemption applies if:
-  - Paid less than $20,000 in cash wages to farm workers in any quarter, AND
-  - Employed fewer than 10 workers on any given day in 20 different weeks
+WHAT IT IS:
+IRS Form 941 (Employer's Quarterly Federal Tax Return). Used for non-agricultural
+employees — retail, administrative, customer service.
 
-If either threshold is exceeded, FUTA applies to agricultural workers.
-Retail workers are always subject to standard FUTA rules.
+WHAT IT REQUIRES IN PRACTICE:
+  - Files QUARTERLY — due April 30, July 31, October 31, January 31
+  - Covers Social Security, Medicare, and federal income tax withholding
+  - Same deposit rules as Form 943 (monthly or semiweekly based on liability)
 
-FUTA rate: 6% on first $7,000 of wages (reduced by state credit up to 5.4%)
-Form: IRS Form 940 (annual, due January 31)
+EMPLOYEE CLASSIFICATION FOR FORM 941:
+  Covered: The Ridge Butcher Shop employees, cashiers, butcher counter staff,
+  retail floor workers, administrative and bookkeeping staff, marketing staff,
+  any employee whose primary work is at a retail location or in an office context
+
+IMPORTANT: The Ridge employees (1109 S Main St) are retail employees even if
+  some of their work involves handling farm products. Their classification is
+  determined by the nature of their employment, not the product they sell.
+
+PENALTY FOR NON-COMPLIANCE:
+  - Same structure as Form 943 — late filing and late deposit penalties apply
+  - Each quarter is separate; missing one quarter compounds the issue
+
+DOCUMENTATION NEEDED:
+  - Form 941 filed each quarter (Q1 April 30, Q2 July 31, Q3 Oct 31, Q4 Jan 31)
+  - W-2s to employees by January 31
+  - Deposit records for each quarter
 
 ================================================================================
-TENNESSEE SUTA — STATE UNEMPLOYMENT TAX
+3. FUTA — FEDERAL UNEMPLOYMENT TAX
 ================================================================================
-Issuing authority: Tennessee Department of Labor and Workforce Development (TDOL)
-Rate: Varies by employer experience rating (new employers: assigned rate)
-Wage base: First $7,000 of each employee's wages
-Form: Quarterly report through Tennessee's Jobs4TN / TDOL portal
-Due dates: Same quarters as Form 941
+WHAT IT IS:
+Federal Unemployment Tax Act (FUTA) funds unemployment benefits. Filed annually
+on Form 940 (due January 31). Rate: 6% on first $7,000 of each employee's wages,
+reduced by a state credit up to 5.4% (net effective rate typically 0.6%).
 
-Agricultural exemption: Similar thresholds as FUTA — confirm with TDOL
+AGRICULTURAL FUTA EXEMPTION:
+Farm employees are exempt from FUTA if BOTH of the following are true:
+  - Farm paid less than $20,000 in cash wages to farm workers in every calendar
+    quarter of the current and prior year, AND
+  - Farm employed fewer than 10 workers on any given day in 20 or more different
+    weeks during the current or prior year
 
-TDOL contact: 844-224-5818
+If EITHER threshold is exceeded, FUTA applies to all farm employees.
+Retail employees are always subject to standard FUTA rules — no exemption.
+
+DOCUMENTATION NEEDED:
+  - Form 940 filed annually by January 31
+  - FUTA deposit records if quarterly liability exceeded $500
+  - Payroll records supporting the employee count and wage figures
+
+================================================================================
+4. TENNESSEE SUTA — STATE UNEMPLOYMENT TAX
+================================================================================
+WHAT IT IS:
+State Unemployment Tax Act (SUTA), administered by Tennessee Department of
+Labor and Workforce Development (TDOL). Funds TN unemployment insurance.
+
+WHAT IT REQUIRES:
+  - Rate: Varies by employer's experience rating. New employers are assigned
+    a standard rate — confirm current rate with TDOL or CPA
+  - Wage base: First $7,000 of each employee's wages per year
+  - Files quarterly — same schedule as Form 941
+  - Filed through Tennessee's Jobs4TN portal (jobs4tn.gov)
+
+AGRICULTURAL SUTA EXEMPTION:
+  Similar thresholds as FUTA — confirm current TN-specific rules with TDOL or
+  CPA. The exemption is not automatic; an analysis of employee count and wages
+  is needed each year.
+
+PENALTY FOR NON-COMPLIANCE:
+  - Late payment: interest and penalties assessed by TDOL
+  - Failure to register: TDOL may audit and assess back taxes
+
+DOCUMENTATION NEEDED:
+  - Quarterly SUTA reports filed via Jobs4TN portal
+  - Payment confirmation records
+  - Employee wage records by quarter
+
+TDOL Contact: (844) 224-5818
 Portal: jobs4tn.gov
 
 ================================================================================
-FILING DEADLINES CALENDAR
+5. W-2 AND YEAR-END FILINGS
 ================================================================================
-January 31:
+WHAT IS REQUIRED:
+  - W-2 to each employee: by January 31
+  - W-3 transmittal + W-2 copies to Social Security Administration: by January 31
+    (electronically) or February 28 (paper — avoid paper for more than a few W-2s)
+  - Both farm employees (943) and retail employees (941) receive W-2s
+
+COMMON ERRORS TO AVOID:
+  - Forgetting to include box 12 codes (e.g., retirement plan contributions)
+  - Incorrect EIN on W-2s
+  - Mismatched names vs. SSA records — use employee's legal name as on their
+    Social Security card
+
+DOCUMENTATION NEEDED:
+  - Copy B retained with farm payroll records for at least 4 years
+  - W-3 and proof of SSA submission
+
+================================================================================
+6. 1099-NEC — INDEPENDENT CONTRACTORS
+================================================================================
+WHAT IT IS:
+If SRF pays any non-employee (contractor, freelancer, vendor providing services)
+$600 or more during the calendar year, a Form 1099-NEC must be issued.
+
+WHEN IT APPLIES AT SRF:
+  - Freelance photographers, social media contractors
+  - Veterinarians (if not incorporated — confirm)
+  - Contract labor for farm or butcher shop work
+  - Any service provider who is not an employee and received $600+
+
+WHEN IT DOES NOT APPLY:
+  - Payments to incorporated companies (S corps, C corps) — generally exempt
+  - Payments for goods (not services)
+  - Employees — they receive W-2s, not 1099s
+
+DEADLINES:
+  - Form 1099-NEC to contractor: January 31
+  - Form 1099-NEC to IRS: January 31
+
+PENALTY FOR NON-COMPLIANCE:
+  - $50–$580 per form not filed (depending on how late), with no cap for
+    intentional disregard
+
+DOCUMENTATION NEEDED:
+  - W-9 form collected from every contractor before first payment
+  - Payment records by contractor for the year
+
+================================================================================
+7. TENNESSEE STATE INCOME TAX WITHHOLDING
+================================================================================
+NOTE: Tennessee has no state income tax on wages (Hall Income Tax applied only
+to investment income and was fully phased out as of January 1, 2021). No state
+income tax withholding from employee wages is required in Tennessee. This is
+a significant simplification vs. most other states.
+
+================================================================================
+8. FILING DEADLINE CALENDAR — QUICK REFERENCE
+================================================================================
+JANUARY 31:
   - Form 943 due (prior year farm employees)
   - Form 940 due (prior year FUTA)
-  - W-2s to employees
-  - W-3 + W-2 copies to SSA
+  - W-2s to all employees
+  - W-3 + W-2 copies to SSA (electronic)
+  - Form 1099-NEC to contractors and to IRS
 
-April 30:  Form 941 Q1 due
-July 31:   Form 941 Q2 due
-October 31: Form 941 Q3 due
-January 31: Form 941 Q4 due
+APRIL 30:   Form 941 Q1 due | SUTA Q1 due
+JULY 31:    Form 941 Q2 due | SUTA Q2 due
+OCTOBER 31: Form 941 Q3 due | SUTA Q3 due
+JANUARY 31: Form 941 Q4 due | SUTA Q4 due
 
-Quarterly SUTA: Same schedule as Form 941
+ONGOING (deposit schedule — confirm with CPA):
+  - Monthly depositors: payroll taxes deposited by 15th of following month
+  - Semiweekly depositors: deposited Wednesday or Friday depending on payday
 
 ================================================================================
-1099 REQUIREMENTS
+9. WORKER CLASSIFICATION — EMPLOYEE VS. CONTRACTOR
 ================================================================================
-Form 1099-NEC required for:
-  - Any non-employee (contractor) paid $600+ during the year
-  - Due to contractor: January 31
-  - Due to IRS: January 31
+RISK AREA: Misclassifying employees as independent contractors is one of the most
+common and expensive IRS/DOL audit findings for small farms and retail businesses.
 
-Do NOT issue 1099s to: corporations (generally), employees (use W-2 instead)
+THE IRS COMMON LAW TEST:
+  A worker is likely an EMPLOYEE (not contractor) if the business:
+  - Controls what work is done AND how it is done
+  - Sets the worker's schedule
+  - Provides the tools and equipment
+  - Has an ongoing relationship with the worker
+  - Prohibits the worker from doing the same work for others
+
+  Independent contractors typically: set their own hours, use their own tools,
+  take on multiple clients, and have the ability to profit or lose money on the job.
+
+AT SRF: Most farm workers and butcher shop workers will be employees, not
+  contractors. Occasional freelance photographers, web developers, and consultants
+  may qualify as contractors — collect a W-9 and confirm with CPA.
+
+================================================================================
+QUICK REFERENCE — KEY CONTACTS
+================================================================================
+IRS: irs.gov | 1-800-829-4933 (Business)
+IRS Publication 51 (Circular A): Agriculture-specific payroll guide — download
+  at irs.gov/pub/irs-pdf/p51.pdf
+Tennessee Dept. of Labor: (844) 224-5818 | jobs4tn.gov
+Recommend: Dedicated CPA with farm/agricultural experience for annual review

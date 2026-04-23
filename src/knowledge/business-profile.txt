@@ -1,130 +1,238 @@
 SOUTHERN RIDGE FARM — BUSINESS PROFILE
-Last updated: 2025-04
+Briefing notes for AI agents. Treat every fact here as authoritative.
+Last updated: April 2025
 
 ================================================================================
 BUSINESS OVERVIEW
 ================================================================================
-Southern Ridge Farm is a family-owned diversified farm operation in Tennessee.
-The farm is operated by the Odom family and focuses on pasture-raised meats,
-raw dairy (via herdshare), eggs, honey, and seasonal vegetables. The business
-blends direct farm sales with a small retail operation and an active online
-presence. Faith is woven into the farm's identity and is reflected in how the
-family communicates with customers and runs the business.
+Southern Ridge Farm is a 180-acre multi-generational family farm and butcher
+operation based in Columbia, Tennessee. The farm runs end-to-end: animals raised
+on the property, processed in an on-farm USDA-inspected facility, and sold
+directly to consumers through two physical locations and online. No middlemen.
 
-Business type: Sole proprietorship / family farm (confirm legal entity)
-State: Tennessee
-Founded: [YEAR — fill in]
-Owner(s): [Primary owner name(s) — fill in]
+The Odom family owns and operates the farm. Faith is central to the family
+identity — they are Reformed Presbyterian. That shows up in how they communicate:
+gratitude, stewardship, honest work. Never preachy, always genuine.
+
+Mission: Building a reliable, community-centered local food system that works
+even when supply chains fail. Customers are treated as stakeholders, not buyers.
+Language used: "We like to think of our farm as YOUR farm too."
+
+Core values: transparency, regenerative stewardship, short supply chains,
+community resilience, no shortcuts on inputs or practices.
 
 ================================================================================
-LOCATIONS
+LOCATIONS & CONTACT
 ================================================================================
 Farm / Primary Location:
-  Address: [Street address — fill in]
-  County: [County — fill in]
-  Highway frontage: Hwy 72 (referenced in marketing)
+  2402 Gene Fitzgerald Rd, Columbia TN 38401
+  Phone: (615) 636-7137
+  Email: hello@southernridgefarm.com
+  Website: southernridgefarm.com
+  Farm Store Hours: Thursday–Saturday, 10am–4pm
 
-Farm Stand:
-  Days/hours: Saturday mornings (primary sales day)
-  Notes: Sells out quickly — sausage reportedly gone by 9am some weeks
+The Ridge Butcher Shop & Fresh Market (retail location):
+  1109 S Main St, Columbia TN 38401
+  (a few blocks south of The Square in downtown Columbia)
+  Phone: (615) 636-7137 (same number)
 
-Online / Delivery:
-  Website: [URL — fill in]
-  Ordering: [Online store / email / text — fill in]
-  Delivery area: [fill in if applicable]
+================================================================================
+SALES CHANNELS
+================================================================================
+1. The Ridge Butcher Shop — in-store retail, butcher counter, grab-and-go
+2. Farm store at 2402 Gene Fitzgerald Rd — Thu–Sat 10am–4pm
+3. Shopify ecommerce store — subscriptions and one-time orders online
+4. Market Wagon platform — regional delivery platform
+5. Nashville farmers markets — delivery to market pickup points
+6. Herdshare program — raw milk distributed to contract shareholders
+
+Subscription and community:
+  - 250+ shareholder families ordering monthly
+  - Meat shares, bulk cow shares (1/16, 1/8, 1/4, 1/2, whole)
+
+Payment methods accepted:
+  Visa, Mastercard, Amex, Discover, Apple Pay, Google Pay,
+  PayPal, Shop Pay, Diners Club, cryptocurrency
+
+================================================================================
+SOCIAL MEDIA & MARKETING
+================================================================================
+Instagram: @southernridgefarm — 2,208 followers, 574 posts
+Facebook: Southern Ridge Farm — 3,301 likes, 18 reviews, 100% recommend
+Newsletter: Klaviyo email platform
+Website: southernridgefarm.com
 
 ================================================================================
 PRODUCTS
 ================================================================================
-Meats:
-  - Breakfast sausage (house-made, pasture-raised pork, sage/pepper/heat blend)
-  - Whole chicken (pasture-raised)
-  - Ground lamb
-  - Lamb chops
-  - Bone-in lamb leg
-  - Dry-aged ribeyes (newer offering, high demand)
-  - Smoked brisket flat
-  - [Other cuts — fill in]
+BEEF
+  - Grass-fed, pasture-raised, 100% Angus
+  - Dry-aged options available
+  - Sold by individual cut and in bulk cow shares:
+    1/16, 1/8, 1/4, 1/2, and whole cow shares
+  - Truly grass-fed: animals graze on pasture — not a marketing term here
 
-Dairy (Herdshare only — see regulations-dairy.txt):
-  - Raw milk (cow or goat — confirm species)
-  - [Other dairy — fill in]
+PORK
+  - Woodland and pasture-raised
+  - Regenerative practices
+  - Corn, soy, and seed oil free feed
 
-Poultry / Other:
-  - Eggs (dozen)
-  - Wildflower honey
+CHICKEN & POULTRY
+  - Pasture-raised
+  - Corn, soy, and seed oil free
+  - Low PUFA (polyunsaturated fatty acids)
 
-Seasonal / Crop:
-  - Winter wheat (east field, harvested seasonally)
-  - [Other crops — fill in]
+BISON
+  - Available (confirm current inventory seasonally)
 
-Pricing:
-  - Farm box (curated): ~$85 value
-  - [Individual item pricing — fill in]
+LAMB
+  - Available (confirm current inventory seasonally)
+
+SEAFOOD (The Ridge location, weekend availability)
+  - Wild-caught only: salmon, halibut, shrimp, rainbow trout, Gulf shrimp
+  - Never farmed
+
+DAIRY
+  - A2A2 raw milk — available via herdshare program only (TN law)
+  - Low-temp vat pasteurized dairy — available for direct purchase
+  - A2A2 refers to the beta-casein protein variant — easier to digest
+    for many people who have trouble with conventional dairy
+
+EGGS
+  - Pasture-raised
+  - Corn, soy, and seed oil free
+
+BAKED GOODS
+  - Real sourdough
+  - Pastries, including gluten-free options
+
+LOCAL & SPECIALTY (The Ridge)
+  - Ferments, jams, canned goods, honey
+  - Locally milled grits and cornmeal
+  - Seasonal fruits and vegetables
+  - Products from other small Tennessee farms
+
+PROCESSED & SMOKEHOUSE MEATS
+  - Smokehouse meats (weekly specials, pre-cooked grab-and-go at The Ridge)
+  - Sausages including Southwest Chicken Bacon Sausage
+  - Snack sticks, bacon, hotdogs (nitrate free, gluten free, no fillers)
+  - Summer sausage, chorizo
+  - Bundles: mixed product bundles available
+
+GIFT CARDS
+  - Redeemable at The Ridge or online
 
 ================================================================================
-CHANNELS
+FARMING PHILOSOPHY & STANDARDS
 ================================================================================
-Sales channels:
-  1. Farm stand (Saturday — primary)
-  2. Online orders / email (confirm system)
-  3. CSA / subscription box (if applicable — confirm)
-  4. Herdshare contracts (dairy only)
+Regenerative agriculture:
+  - Actively restoring soil, recharging waterways, increasing biodiversity
+  - Not just "sustainable" — improving the land, not just maintaining it
 
-Marketing channels:
-  1. Instagram (@southernridgefarm — confirm handle)
-  2. Facebook (Southern Ridge Farm page)
-  3. Email newsletter (periodic, farm updates + product availability)
-  4. Word of mouth / local community
+Animal inputs:
+  - No hormones, no antibiotics, no vaccines
+  - No pesticides, no GMOs
+  - Chickens and pork: corn, soy, and seed oil free feed
+  - Low PUFA focus across all animals
+  - Grass-fed beef means actually grazing on pasture — not grain-finished
 
-================================================================================
-STAFF OVERVIEW
-================================================================================
-Family-run operation. Crew scheduling mentioned for harvest windows.
-Seasonal labor likely during harvest. [Fill in headcount / structure]
+Dairy:
+  - A2A2 beta-casein protein — gentler on digestion than A1 dairy
+  - Raw milk available only through legally compliant herdshare program
+  - Low-temp vat pasteurized option for those who prefer pasteurized
 
-Farm employees: likely filed under Form 943 (agricultural)
-Retail employees: filed under Form 941 (see regulations-payroll.txt)
+Processing:
+  - On-farm USDA-inspected processing facility
+  - Controls the entire supply chain from inputs to final cut
+  - Short supply chain = transparency you can actually verify
+
+Community:
+  - Customers can visit the farm
+  - Farm meals, work days, concerts, movie nights
+  - Goal: reliable local food even during supply chain disruptions
 
 ================================================================================
 BRAND VOICE
 ================================================================================
-Tone: Warm, direct, unpretentious. Talks like a neighbor, not a brand.
-Language level: Plain. No jargon. Short sentences.
-We/I usage: "We" for the family/farm, "I" in personal email outreach.
-Humor: Dry, occasional. Never forced.
-Urgency: Real when needed (limited stock, harvest windows) — never manufactured.
+Tone: Warm, direct, community-centered. Educational without being preachy.
+Proud of their standards but never condescending.
+
+Register: Plain English. Write like a neighbor, not a marketer.
+  Good: "Our beef is actually grass-fed — they graze on pasture."
+  Bad: "Leveraging regenerative practices for optimal nutritional outcomes."
+
+"YOUR farm" language: Customers are stakeholders, not just buyers.
+  Use: "your farm," "our community," "we" for the farm family.
+
+Transparency language: "complete transparency you can trust," "no middlemen,"
+"you can see exactly how your food is raised."
+
+Faith integration: Reformed Presbyterian. Scripture used naturally, not forced.
+  Good fit: Colossians 3:23 — "Whatever you do, work at it with all your heart"
+  Good fit: Gratitude language around harvest, lambing, good seasons
+  Avoid: Opening marketing emails with a verse. Avoid anything performative.
+
+What performs well in content:
+  - Specific details (a named animal, a specific pasture, a weather event)
+  - Behind-the-scenes moments (early mornings, seasonal transitions)
+  - Honest product education ("here's why our chicken costs more")
+  - Scarcity that's real ("weekend seafood sells out by noon")
+  - Community stories (customers visiting, families at the farm)
 
 What to avoid:
-  - Corporate language ("leverage," "synergy," "ecosystem")
-  - Over-explaining farming practices — the audience already respects them
-  - Exclamation points in every sentence
-  - Hashtag overload (3–5 max per Instagram post)
-
-Content that performs well:
-  - Behind-the-scenes moments (lambing, early morning, kids on the farm)
-  - Honest product descriptions ("no fillers," "no shortcuts")
-  - Specific details (pen 7, gate 4, east field) — makes it feel real
-  - Scarcity when true (sold out by 9am)
+  - Corporate language of any kind
+  - Overuse of exclamation points
+  - More than 4–5 hashtags per Instagram post
+  - Vague sustainability claims without specifics
 
 ================================================================================
-FAITH INTEGRATION NOTES
+COMPETITIVE LANDSCAPE — MIDDLE TENNESSEE
 ================================================================================
-Faith is a genuine part of the family's identity and is integrated naturally,
-not performatively. Scripture references are used occasionally and fit the
-content — never forced or preachy.
+Bear Creek Farms (Thompson's Station, TN):
+  Premium beef and pork. Restaurant-focused. Franklin Farmers Market on Saturdays.
+  On-farm store Wednesday only, very limited hours (3 hours).
+  Differentiator vs SRF: SRF has a permanent retail location, wider hours,
+  broader product line, and a community membership model.
 
-Examples of appropriate integration:
-  - Closing a newsletter with a relevant verse
-  - Referencing gratitude and stewardship in harvest or lambing posts
-  - Using language like "blessed," "grateful," "good work"
+Light Hill Meats (Middle Tennessee):
+  USDA processing + retail butcher shop. Similar farm-to-table model.
+  Direct competitor on model. SRF advantage: full vertical integration,
+  on-farm USDA facility, dairy program, community events.
 
-Examples of inappropriate use:
-  - Opening every post with a Bible verse
-  - Preaching to customers about faith
-  - Using faith language in invoices, receipts, or regulatory communications
+The Butcher Block (Franklin, TN):
+  Creekstone premium beef, conventional sourcing, deli sandwiches.
+  Not a direct competitor on philosophy — conventional sourcing, no farm story.
 
-Common verses used (natural fit):
-  - Psalm 23:1 (shepherd content)
-  - 1 Thessalonians 5:18 (gratitude / harvest)
-  - Proverbs 12:11 (hard work / farm life)
+Smokin Oaks Organic Farms (Middle Tennessee):
+  Regenerative organic, seed-oil free. Direct philosophy competitor.
+  Watch: similar messaging on inputs and regenerative practices.
+
+ButcherBox (national, online only):
+  National subscription service. No local story, no farm visits, no community.
+  SRF advantage: the relationship, the visit, the faces behind the food.
+
+Whole Foods / Sprouts (Nashville market):
+  "Organic" branding without the direct relationship or local accountability.
+  SRF differentiator: customers can walk the land, meet the animals, know the family.
+
+Key SRF competitive advantages:
+  1. End-to-end vertical integration (farm → processing → retail)
+  2. On-farm USDA inspected processing facility
+  3. Community membership model (250+ shareholder families)
+  4. Physical retail presence (The Ridge) with butcher counter
+  5. Broadest product line in the region (beef + pork + poultry + bison +
+     lamb + seafood + dairy + eggs + baked goods + local products)
+  6. Faith-integrated community identity — genuine, not manufactured
+
+================================================================================
+OPERATIONAL NOTES FOR AGENTS
+================================================================================
+- When discussing product availability, direct customers to The Ridge for
+  walk-in purchases or southernridgefarm.com for online orders.
+- Seafood is weekend-only at The Ridge — don't promise it weekdays.
+- Raw milk is ONLY available through the herdshare program — never suggest
+  a customer can just "buy" raw milk.
+- Cow shares require planning — customer needs freezer space (approx.
+  4 cubic feet per 1/4 cow, 70–90 lbs of meat).
+- For bulk orders or large questions, phone is best: (615) 636-7137.
+- Email for non-urgent: hello@southernridgefarm.com

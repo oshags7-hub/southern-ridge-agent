@@ -1,82 +1,188 @@
 SOUTHERN RIDGE FARM — CUSTOMER FAQ
-For use by the Storyteller agent when drafting customer-facing content.
-Owner: Please fill in answers based on your actual practices and preferences.
+For use by the Shepherd and Storyteller agents. Written in SRF brand voice.
+Last updated: April 2025.
 
 ================================================================================
-PRODUCT QUESTIONS
+BUYING & ORDERING
 ================================================================================
 
 Q: Where can I buy your products?
-A: [FILL IN — farm stand location/hours, online ordering link if applicable]
+A: Two ways to get your hands on our stuff. Come see us in person at The Ridge
+   Butcher Shop at 1109 S Main St in Columbia — that's a few blocks south of
+   The Square. We're also at our farm store out at 2402 Gene Fitzgerald Rd,
+   open Thursday through Saturday 10am to 4pm. Or order online anytime at
+   southernridgefarm.com.
+
+Q: What are your hours?
+A: The Ridge Butcher Shop is our main retail location — call us at (615) 636-7137
+   to confirm current hours. The farm store is open Thursday through Saturday,
+   10am to 4pm. Online orders are available 24/7 at southernridgefarm.com.
 
 Q: Do you ship?
-A: [FILL IN — yes/no, which products, which states, shipping carrier]
+A: We ship frozen meat to most of the continental U.S. through our online store
+   at southernridgefarm.com. Orders go out on dry ice. We also deliver locally
+   through Market Wagon, and we have pickup points at Nashville farmers markets.
 
-Q: How do I place an order?
-A: [FILL IN — website, email, text, etc.]
+Q: How do I order a cow share (bulk beef)?
+A: Visit southernridgefarm.com or give us a call at (615) 636-7137. Bulk shares
+   come in 1/16, 1/8, 1/4, 1/2, and whole. You'll want to make sure you have
+   freezer space — a quarter cow is about 70-90 lbs and needs roughly 4 cubic
+   feet. We'll let you know when your share is ready for pickup.
 
-Q: Do you take orders in advance or is it first-come first-served?
-A: [FILL IN — current system]
+Q: Do you take custom butcher orders?
+A: Yes. Come by The Ridge or call us and talk to our butcher. We can do custom
+   cuts, specialty requests, and whole-animal processing. Some things take lead
+   time depending on what we have coming through, so the sooner you ask, the better.
 
-Q: How should I store the meat when I get home?
-A: [FILL IN — refrigerate within X hours, freeze if not using within X days, etc.]
+Q: What payment methods do you accept?
+A: Visa, Mastercard, Amex, Discover, Apple Pay, Google Pay, PayPal, Shop Pay,
+   Diners Club, and cryptocurrency. We've got you covered.
 
 ================================================================================
-FARMING PRACTICE QUESTIONS
+OUR ANIMALS & FARMING PRACTICES
 ================================================================================
 
-Q: Are your animals pastured?
-A: [FILL IN — describe actual pasture rotation, acreage, seasonal variations]
+Q: Are your cattle really grass-fed?
+A: Yes — and we mean it. Our beef is 100% Angus, pasture-raised on our 180 acres
+   here in Columbia. They graze on actual grass. We don't grain-finish them.
+   "Grass-fed" has gotten watered down in marketing, so we want to be clear: our
+   animals eat grass and forage from birth to harvest. No feedlot finishing.
 
-Q: Are your animals given antibiotics or hormones?
-A: [FILL IN — current practice. Common answer: no routine antibiotics, no hormones,
-   but note if you treat sick animals — "we treat sick animals as needed but do not
-   administer routine preventative antibiotics"]
+Q: Do you use hormones or antibiotics?
+A: No hormones, no antibiotics, no vaccines. That's our standard across all our
+   animals — beef, pork, chicken, and lamb. We've built our herd and flock to be
+   healthy without routine pharmaceutical inputs. If you ever have questions about
+   a specific animal or product, just ask.
 
-Q: What do your pigs/cattle/sheep eat?
-A: [FILL IN — pasture + any supplemental feed, GMO status if relevant]
+Q: What do your pigs eat?
+A: Our pigs are woodland and pasture-raised, and their feed is corn-free, soy-free,
+   and seed oil-free. We're intentional about what goes into the feed because it
+   affects the fat quality of the pork. Low PUFA (polyunsaturated fatty acids) is
+   something we pay attention to — it matters for the nutritional profile of the meat.
+
+Q: What about the chickens?
+A: Pasture-raised, corn-free, soy-free, seed oil-free. Same philosophy as the pork.
+   Our chickens are outside, foraging, living the way chickens are supposed to live.
+   The result is a more flavorful bird with a better nutritional profile — lower PUFA,
+   better omega-3 to omega-6 ratio.
 
 Q: Are you certified organic?
-A: [FILL IN — if yes, which certifier. If no, explain why and what practices you do follow]
+A: We're not certified organic. Organic certification is expensive and doesn't always
+   reflect what actually matters to us — our standards go beyond what organic requires
+   in some areas (like corn/soy-free feed and no vaccines) and we'd rather invest in
+   the land and animals than in paperwork. What we can offer instead is transparency:
+   come visit, ask questions, see for yourself how your food is raised.
 
 Q: Can I visit the farm?
-A: [FILL IN — yes/no, farm tour schedule, how to sign up]
+A: Yes, and we love it when you do. This is your farm too. We host farm meals, work
+   days, concerts, and movie nights throughout the year. Follow us on Instagram
+   (@southernridgefarm) or sign up for our newsletter at southernridgefarm.com to
+   stay in the loop. You can also call us at (615) 636-7137 to ask what's coming up.
+
+Q: What is regenerative agriculture?
+A: It's farming that actively improves the land rather than just maintaining it.
+   We're not trying to hold things steady — we're working to restore soil health,
+   recharge waterways, and increase biodiversity on our 180 acres. That means
+   rotational grazing, cover crops, and letting the land recover properly between
+   uses. Healthy land produces better food. That's the whole point.
 
 ================================================================================
 DAIRY QUESTIONS
 ================================================================================
 
 Q: Do you sell raw milk?
-A: We offer raw milk through our herdshare program. Under Tennessee law, raw milk
-   cannot be sold retail — but you can own a share of our herd and receive your
-   portion of their milk production. Contact us to learn more about herdshare membership.
+A: We can't sell raw milk at retail — Tennessee law prohibits it. What we do offer
+   is a herdshare program, which is the legal way to access raw milk in Tennessee.
+   You own a share of our dairy herd, and we care for the animals on your behalf.
+   The milk you receive is your share of production from animals you own — not a
+   retail purchase. Call or email us to learn more about joining the herdshare.
 
 Q: What is a herdshare?
-A: A herdshare means you own a percentage of our dairy animals. We board and care for
-   your animals on the farm. In return, you receive your share of their milk each week.
-   You're not buying milk — you're receiving the production of animals you own.
-   [FILL IN: current boarding fee and how to join]
+A: A herdshare means you own a percentage of our dairy animals. We board and care
+   for them on the farm. In return, you receive your proportional share of their
+   milk each week. You're not buying milk — you own a piece of the herd. It's a
+   written agreement, and it's the only legal structure for raw milk distribution
+   in Tennessee. We have 250+ shareholder families — it's a real community.
 
-Q: Is raw milk safe?
-A: [FILL IN — owner's preferred answer. Suggested: "Raw milk is a personal choice.
-   We take sanitation seriously and test our milk regularly. We recommend you research
-   the topic and make the choice that's right for your family."]
+Q: What is A2A2 milk?
+A: A2A2 refers to the beta-casein protein in the milk. Cows with the A2A2 genetic
+   variant produce milk with only the A2 protein — no A1. A lot of people who
+   struggle to digest conventional dairy find they do much better with A2A2 milk.
+   It's not about lactose — the lactose level is the same — it's the protein structure
+   that's different. Our dairy herd is A2A2. We think it matters.
 
-Q: What animals are in the dairy herd?
-A: [FILL IN — cow, goat, breed, number of animals]
+Q: Do you sell pasteurized dairy too?
+A: Yes. We offer low-temperature vat pasteurized dairy products that don't require
+   a herdshare — you can buy those directly. Low-temp pasteurization (145°F for
+   30 minutes) is gentler than commercial high-heat pasteurization and preserves
+   more of the milk's natural qualities. Available at The Ridge and online.
 
 ================================================================================
-COOKING QUESTIONS
+MEAT QUALITY & STORAGE
 ================================================================================
 
-Q: How do I cook your breakfast sausage?
-A: [FILL IN — preferred method, internal temp, any tips]
+Q: How is your meat processed?
+A: We process right here on the farm in our USDA-inspected facility. The whole
+   supply chain is ours — we raise the animals, process them, cut them, and sell
+   them. No middlemen, no third-party plants. You can trace your food from pasture
+   to package without leaving our farm.
 
-Q: What's the best way to cook a pastured whole chicken?
-A: [FILL IN — pastured birds often cook faster, lower fat content, suggested method]
+Q: How long will the meat keep in the freezer?
+A: Vacuum-sealed cuts: 12 months or more. Ground beef: 3-4 months. Pork chops and
+   steaks: 6-12 months. These are conservative guidelines — properly frozen meat is
+   safe beyond these windows, though quality can decline. When in doubt, check for
+   freezer burn and smell it after thawing.
 
-Q: Do you have recipes?
-A: [FILL IN — link to recipe page, Instagram highlights, or note that none exist yet]
+Q: How should I thaw frozen meat?
+A: Best method: move it to the fridge 24-48 hours before you plan to cook it.
+   Cold water thaw works too — keep the package sealed and submerge in cold water,
+   changing the water every 30 minutes. Don't thaw on the counter. Never re-freeze
+   thawed meat unless you cook it first.
 
-Q: How long will the meat last in the freezer?
-A: [FILL IN — general guidance: vacuum-sealed cuts 6-12 months, ground 3-4 months]
+Q: Why does pastured meat sometimes look different from grocery store meat?
+A: It's supposed to. Our beef is grass-fed, not grain-finished, so it's leaner with
+   a different fat color — sometimes more yellow than white. That's beta-carotene
+   from the grass. Our chickens have firmer, more flavorful meat because they actually
+   exercise. Pastured pork can have a more complex flavor and slightly different fat
+   composition. These are signs of quality, not problems.
+
+Q: Do you offer dry-aged beef?
+A: Yes. Dry-aged beef is available — check with us at The Ridge or online for
+   current availability. Dry aging concentrates flavor and improves tenderness.
+   It's worth asking about if you want the best steak on the table.
+
+================================================================================
+SEAFOOD QUESTIONS
+================================================================================
+
+Q: Do you carry seafood?
+A: Yes, at The Ridge on weekends. Wild-caught only — salmon, halibut, shrimp,
+   rainbow trout, and Gulf shrimp. We never sell farmed seafood. Weekend availability
+   only, and it sells out fast. If you want it, come early or call ahead.
+
+Q: Where does your seafood come from?
+A: Wild-caught. We source from trusted suppliers and it changes seasonally based
+   on what's actually running. It's not farmed, it's not factory product. If you
+   want specifics on origin for a particular item, just ask us — we'll tell you
+   what we know.
+
+================================================================================
+COMMUNITY & EVENTS
+================================================================================
+
+Q: How do I join your shareholder program?
+A: Visit southernridgefarm.com or call us at (615) 636-7137. We have 250+ shareholder
+   families ordering monthly. Shares include meat boxes, bulk cow shares, and
+   herdshare memberships. It's the best way to make sure you have consistent access
+   to our products — and it helps us plan for the season.
+
+Q: Do you do farm events?
+A: Yes. Farm meals, work days, concerts, movie nights — we try to make this a real
+   community gathering place. Sign up for our newsletter or follow @southernridgefarm
+   on Instagram to hear about upcoming events. The farm is open to the community —
+   that's always been part of what we're building here.
+
+Q: How do I stay in the loop?
+A: Instagram: @southernridgefarm | Facebook: Southern Ridge Farm | Newsletter signup
+   at southernridgefarm.com. The newsletter is the best way to hear about seasonal
+   availability, new products, and events before anyone else.
