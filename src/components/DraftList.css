@@ -31,12 +31,54 @@
   border-left-color: var(--pasture);
 }
 
+.draft-empty {
+  padding: 20px 14px;
+  font-size: 13px;
+  color: var(--smoke);
+  font-style: italic;
+  text-align: center;
+}
+
+.draft-item-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
 .draft-platform {
   font-size: 10px;
   font-weight: 400;
   color: var(--smoke);
   text-transform: uppercase;
   letter-spacing: 0.06em;
+}
+
+.draft-badge {
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+.draft-badge.approved {
+  background: #d4edda;
+  color: #2d6a3f;
+}
+
+.draft-badge.skipped {
+  background: var(--parchment);
+  color: var(--smoke);
+}
+
+.draft-item.status-approved {
+  opacity: 0.65;
+}
+
+.draft-item.status-skipped {
+  opacity: 0.45;
 }
 
 .draft-title {

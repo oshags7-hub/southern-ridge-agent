@@ -10,11 +10,13 @@ const TONE_BUTTONS = [
   { key: 'faith',       label: 'Faith tone' },
 ]
 
-export default function DraftEditor({ draft }) {
+export default function DraftEditor({ draft, onApprove, onSkip }) {
   const [content, setContent] = useState(draft.content)
+  const [copied, setCopied] = useState(false)
 
   useEffect(() => {
     setContent(draft.content)
+    setCopied(false)
   }, [draft.id])
 
   function applyTone(toneKey) {
@@ -26,14 +28,23 @@ export default function DraftEditor({ draft }) {
     navigator.clipboard.writeText(content)
   }
 
-  function handleApprove() {
+  async function handleApprove() {
     if (FEATURES.autoPosting) {
-      alert(`"${draft.title}" approved and scheduled.`)
+      onApprove?.(draft.id)
     } else {
-      navigator.clipboard.writeText(content)
-      alert(`"${draft.title}" copied. Mark it done in your publishing tool.`)
+      await navigator.clipboard.writeText(content).catch(() => {})
+      onApprove?.(draft.id)
+      setCopied(true)
     }
   }
+
+  function handleSkip() {
+    onSkip?.(draft.id)
+  }
+
+  const isApproved = draft.status === 'approved'
+  const isSkipped = draft.status === 'skipped'
+  const isDone = isApproved || isSkipped
 
   return (
     <div className="draft-editor">
@@ -62,10 +73,27 @@ export default function DraftEditor({ draft }) {
       </div>
 
       <div className="editor-footer">
-        <button className="footer-btn ghost">Skip</button>
+        {copied && (
+          <span className="copied-confirm">Copied — ready to paste</span>
+        )}
+        <button
+          className="footer-btn ghost"
+          onClick={handleSkip}
+          disabled={isDone}
+        >
+          {isSkipped ? 'Skipped' : 'Skip'}
+        </button>
         <button className="footer-btn ghost" onClick={handleCopy}>Copy</button>
-        <button className="footer-btn approve" onClick={handleApprove}>
-          {FEATURES.autoPosting ? 'Approve & schedule' : 'Copy & mark done'}
+        <button
+          className={`footer-btn approve${isApproved ? ' done' : ''}`}
+          onClick={handleApprove}
+          disabled={isDone}
+        >
+          {isApproved
+            ? 'Approved'
+            : FEATURES.autoPosting
+            ? 'Approve & schedule'
+            : 'Copy & mark done'}
         </button>
       </div>
     </div>

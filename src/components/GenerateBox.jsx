@@ -1,14 +1,18 @@
 import { useState } from 'react'
 import './GenerateBox.css'
 
-export default function GenerateBox({ onGenerate }) {
+export default function GenerateBox({ onGenerate, generating = false }) {
   const [value, setValue] = useState('')
 
   function handleSubmit() {
     const text = value.trim()
-    if (!text) return
+    if (!text || generating) return
     onGenerate(text)
     setValue('')
+  }
+
+  function handleKeyDown(e) {
+    if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) handleSubmit()
   }
 
   return (
@@ -19,14 +23,16 @@ export default function GenerateBox({ onGenerate }) {
         placeholder="e.g. New dry-aged ribeyes just cut…"
         value={value}
         onChange={e => setValue(e.target.value)}
+        onKeyDown={handleKeyDown}
         rows={3}
+        disabled={generating}
       />
       <button
         className="generate-btn"
         onClick={handleSubmit}
-        disabled={!value.trim()}
+        disabled={!value.trim() || generating}
       >
-        Generate draft
+        {generating ? 'Generating…' : 'Generate draft'}
       </button>
     </div>
   )

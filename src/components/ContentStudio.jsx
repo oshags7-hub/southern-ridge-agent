@@ -1,28 +1,45 @@
 import { useState } from 'react'
-import { drafts as initialDrafts } from '../mockData.js'
+import { useDraftQueue } from '../services/draftQueue.js'
+import { generateStorytellerDraft } from '../services/generators.js'
+import { getProducts } from '../services/shopify.js'
 import DraftList from './DraftList.jsx'
 import GenerateBox from './GenerateBox.jsx'
 import DraftEditor from './DraftEditor.jsx'
 import './ContentStudio.css'
 
-let nextId = initialDrafts.length + 1
-
 export default function ContentStudio() {
-  const [drafts, setDrafts] = useState(initialDrafts)
-  const [selectedId, setSelectedId] = useState(initialDrafts[0].id)
+  const { drafts, addDraft, approveDraft, skipDraft } = useDraftQueue()
+  const [selectedId, setSelectedId] = useState(() => drafts[0]?.id ?? null)
+  const [generating, setGenerating] = useState(false)
 
-  const selectedDraft = drafts.find(d => d.id === selectedId)
+  const selectedDraft = drafts.find(d => d.id === selectedId) ?? drafts[0] ?? null
 
-  function handleGenerate(prompt) {
-    const newDraft = {
-      id: nextId++,
-      platform: 'Draft',
-      title: prompt.length > 40 ? prompt.slice(0, 40) + '…' : prompt,
-      meta: 'generated · unsaved',
-      content: `[Generated from prompt]\n\n${prompt}\n\n— Edit this draft to shape your message.`,
+  async function handleGenerate(prompt) {
+    setGenerating(true)
+    try {
+      let products = []
+      if (import.meta.env.VITE_WORKER_URL) {
+        products = await getProducts().catch(() => [])
+      }
+      const draft = await generateStorytellerDraft(prompt, products)
+      addDraft(draft)
+      setSelectedId(draft.id)
+    } catch (err) {
+      const fallback = {
+        id: `draft_${Date.now()}`,
+        platform: 'Draft',
+        title: prompt.length > 45 ? prompt.slice(0, 45) + '…' : prompt,
+        meta: 'generated · error',
+        content: `Generation failed: ${err.message}\n\nYour prompt:\n${prompt}`,
+        agentKey: 'storyteller',
+        status: 'pending',
+        createdAt: new Date().toISOString(),
+      }
+      addDraft(fallback)
+      setSelectedId(fallback.id)
+    } finally {
+      setGenerating(false)
     }
-    setDrafts(prev => [newDraft, ...prev])
-    setSelectedId(newDraft.id)
   }
 
   return (
@@ -30,13 +47,19 @@ export default function ContentStudio() {
       <div className="studio-left">
         <DraftList
           drafts={drafts}
-          selectedId={selectedId}
+          selectedId={selectedId ?? drafts[0]?.id}
           onSelect={setSelectedId}
         />
-        <GenerateBox onGenerate={handleGenerate} />
+        <GenerateBox onGenerate={handleGenerate} generating={generating} />
       </div>
       <div className="studio-right">
-        {selectedDraft && <DraftEditor draft={selectedDraft} />}
+        {selectedDraft && (
+          <DraftEditor
+            draft={selectedDraft}
+            onApprove={approveDraft}
+            onSkip={skipDraft}
+          />
+        )}
       </div>
     </div>
   )
