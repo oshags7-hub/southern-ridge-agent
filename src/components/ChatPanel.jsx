@@ -1,60 +1,73 @@
 import { useState, useEffect, useRef } from 'react'
-import { agentKeys, agentLabels, agentReplies, agentFallbackReplies, agentImageReplies, imageEnabledAgents } from '../data/agentConfig.js'
-// eslint-disable-next-line no-unused-vars
-import { buildSystemPrompt } from '../services/anthropic.js'
+import { agentKeys, agentLabels, agentReplies, agentImageReplies, imageEnabledAgents } from '../data/agentConfig.js'
+import { sendMessage } from '../services/anthropic.js'
 import './ChatPanel.css'
 
-function buildOpeningMessages(agentKey, overrideText) {
-  return [{ role: 'agent', text: overrideText ?? agentReplies[agentKey] }]
+// Display message: { role: 'user'|'agent', text?, type?: 'image', src?, name? }
+// API history:     { role: 'user'|'assistant', content: string }
+
+function buildOpening(agentKey, overrideText) {
+  return {
+    display: [{ role: 'agent', text: overrideText ?? agentReplies[agentKey] }],
+    // Opening message is UI-only — not sent to API as history
+    history: [],
+  }
 }
 
 export default function ChatPanel({ activeAgent, onAgentChange, initialMessage }) {
-  const [messages, setMessages] = useState(() => buildOpeningMessages(activeAgent, initialMessage))
+  const opening = buildOpening(activeAgent, initialMessage)
+  const [messages, setMessages] = useState(opening.display)
+  const [apiHistory, setApiHistory] = useState(opening.history)
   const [input, setInput] = useState('')
+  const [typing, setTyping] = useState(false)
   const [dragOver, setDragOver] = useState(false)
   const listRef = useRef(null)
   const fileInputRef = useRef(null)
 
   const supportsImageDrop = imageEnabledAgents.includes(activeAgent)
+  const hasApiKey = !!import.meta.env.VITE_ANTHROPIC_API_KEY
 
   useEffect(() => {
-    setMessages(buildOpeningMessages(activeAgent, initialMessage))
+    const o = buildOpening(activeAgent, initialMessage)
+    setMessages(o.display)
+    setApiHistory(o.history)
     setInput('')
+    setTyping(false)
   }, [activeAgent, initialMessage])
 
   useEffect(() => {
     if (listRef.current) {
       listRef.current.scrollTop = listRef.current.scrollHeight
     }
-  }, [messages])
+  }, [messages, typing])
 
-  function handleSend() {
+  async function handleSend() {
     const text = input.trim()
-    if (!text) return
+    if (!text || typing) return
     setInput('')
-    setMessages(prev => [...prev, { role: 'user', text }])
 
-    // --- ANTHROPIC INTEGRATION POINT ---
-    // buildSystemPrompt(activeAgent) returns the full system prompt for this agent,
-    // combining its role, personality, and relevant knowledge files.
-    //
-    // To go live, replace this setTimeout with:
-    //
-    //   const systemPrompt = buildSystemPrompt(activeAgent)
-    //   const reply = await AnthropicService.chat({
-    //     agentKey: activeAgent,
-    //     systemPrompt,
-    //     messages,
-    //     userMessage: text,
-    //   })
-    //   setMessages(prev => [...prev, { role: 'agent', text: reply }])
-    //
-    // Until VITE_ANTHROPIC_API_KEY is set, the mock reply below is used.
-    void buildSystemPrompt(activeAgent) // imported and ready
-    setTimeout(() => {
-      setMessages(prev => [...prev, { role: 'agent', text: agentFallbackReplies[activeAgent] }])
-    }, 550)
-    // --- END INTEGRATION POINT ---
+    const userDisplay = { role: 'user', text }
+    setMessages(prev => [...prev, userDisplay])
+    setTyping(true)
+
+    const nextHistory = [...apiHistory, { role: 'user', content: text }]
+
+    try {
+      const reply = await sendMessage({
+        agentKey: activeAgent,
+        history: apiHistory,
+        userMessage: text,
+      })
+      setApiHistory([...nextHistory, { role: 'assistant', content: reply }])
+      setMessages(prev => [...prev, { role: 'agent', text: reply }])
+    } catch (err) {
+      const fallback = hasApiKey
+        ? `Something went wrong reaching the server. (${err.message})`
+        : 'API key not configured. Add VITE_ANTHROPIC_API_KEY to .env.local to enable live responses.'
+      setMessages(prev => [...prev, { role: 'agent', text: fallback }])
+    } finally {
+      setTyping(false)
+    }
   }
 
   function handleKeyDown(e) {
@@ -67,12 +80,30 @@ export default function ChatPanel({ activeAgent, onAgentChange, initialMessage }
   function processImageFile(file) {
     if (!file || !file.type.startsWith('image/')) return
     const reader = new FileReader()
-    reader.onload = (e) => {
-      setMessages(prev => [...prev, { role: 'user', type: 'image', src: e.target.result, name: file.name }])
-      setTimeout(() => {
-        const reply = agentImageReplies[activeAgent] ?? agentFallbackReplies[activeAgent]
+    reader.onload = async (e) => {
+      const imgDisplay = { role: 'user', type: 'image', src: e.target.result, name: file.name }
+      setMessages(prev => [...prev, imgDisplay])
+      setTyping(true)
+
+      // Image messages use a descriptive text in API history
+      const imageMsg = `[User attached an image: ${file.name}]`
+      const nextHistory = [...apiHistory, { role: 'user', content: imageMsg }]
+
+      try {
+        const reply = hasApiKey
+          ? await sendMessage({ agentKey: activeAgent, history: apiHistory, userMessage: imageMsg })
+          : (agentImageReplies[activeAgent] ?? 'Image received.')
+
+        // Short delay for mock path so it feels natural
+        if (!hasApiKey) await new Promise(r => setTimeout(r, 700))
+
+        setApiHistory([...nextHistory, { role: 'assistant', content: reply }])
         setMessages(prev => [...prev, { role: 'agent', text: reply }])
-      }, 700)
+      } catch {
+        setMessages(prev => [...prev, { role: 'agent', text: agentImageReplies[activeAgent] ?? 'Image received.' }])
+      } finally {
+        setTyping(false)
+      }
     }
     reader.readAsDataURL(file)
   }
@@ -81,13 +112,7 @@ export default function ChatPanel({ activeAgent, onAgentChange, initialMessage }
     e.preventDefault()
     setDragOver(false)
     if (!supportsImageDrop) return
-    const file = e.dataTransfer.files[0]
-    processImageFile(file)
-  }
-
-  function handleDragOver(e) {
-    e.preventDefault()
-    if (supportsImageDrop) setDragOver(true)
+    processImageFile(e.dataTransfer.files[0])
   }
 
   function handleFileSelect(e) {
@@ -113,7 +138,7 @@ export default function ChatPanel({ activeAgent, onAgentChange, initialMessage }
         className={`chat-messages${dragOver ? ' drag-over' : ''}`}
         ref={listRef}
         onDrop={handleDrop}
-        onDragOver={handleDragOver}
+        onDragOver={e => { e.preventDefault(); if (supportsImageDrop) setDragOver(true) }}
         onDragLeave={() => setDragOver(false)}
       >
         {dragOver && (
@@ -138,6 +163,17 @@ export default function ChatPanel({ activeAgent, onAgentChange, initialMessage }
             )}
           </div>
         ))}
+
+        {typing && (
+          <div className="chat-message agent">
+            <span className="chat-msg-label">{agentLabels[activeAgent]}</span>
+            <div className="chat-bubble typing-bubble">
+              <span className="typing-dot" />
+              <span className="typing-dot" />
+              <span className="typing-dot" />
+            </div>
+          </div>
+        )}
       </div>
 
       <div className="chat-input-row">
@@ -165,13 +201,14 @@ export default function ChatPanel({ activeAgent, onAgentChange, initialMessage }
           value={input}
           onChange={e => setInput(e.target.value)}
           onKeyDown={handleKeyDown}
+          disabled={typing}
         />
         <button
           className="chat-send"
           onClick={handleSend}
-          disabled={!input.trim()}
+          disabled={!input.trim() || typing}
         >
-          Send
+          {typing ? '…' : 'Send'}
         </button>
       </div>
     </div>
